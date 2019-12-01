@@ -1,0 +1,49 @@
+.theme-wrapper {
+  --colorBlue: #0AB3B9;
+  --colorBlueHover: #1E7477;
+
+  --colorGray: #AFB5C0;
+  --colorGrayHover: #878A8F;
+
+  --colorDefault: #2EE74A;
+  --colorDefaultHover: #209732;
+
+  --colorGreen: #2EE74A;
+  --colorGreenHover: #209732;
+
+  --colorRed: #AA2020;
+  --colorRedHover: #7A2020;
+
+  --colorBlack: #000000;
+  --colorBlackHover: #0C0C0C;
+
+  --colorWhite: #FFFFFF;
+  --colorWhiteHover: #F2F2F2;
+}
+
+$variables: (
+  --colorBlue: var(--colorBlue),
+  --colorBlueHover: var(--colorBlueHover),
+
+  --colorGray: var(--colorGray),
+  --colorGrayHover: var(--colorGrayHover),
+
+  --colorDefault: var(--colorDefault),
+  --colorDefaultHover: var(--colorDefaultHover),
+
+  --colorGreen: var(--colorGreen),
+  --colorGreenHover: var(--colorGreenHover),
+
+  --colorRed: var(--colorRed),
+  --colorRedHover: var(--colorRedHover),
+
+  --colorBlack: var(--colorBlack),
+  --colorBlackHover: var(--colorBlackHover),
+
+  --colorWhite: var(--colorWhite),
+  --colorWhiteHover: var(--colorWhiteHover)
+);
+
+@function var($variable) {
+  @return map-get($variables, $variable);
+}

@@ -1,0 +1,842 @@
+<div id="form">
+  <ng-container *ngIf="type == 'strategies-market'">
+    <form [formGroup]="formGroupStrategiesMarket">
+      <div class="row">
+        <div class="col-md-4">
+          <mat-accordion>
+            <mat-expansion-panel [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Basic information
+                </mat-panel-title>
+
+                <mat-panel-description>
+                  Basic information of your strategy
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Strategy name</span>
+
+                    <input type="text" formControlName="name" placeholder="Write strategy name">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Exchange</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="exchange" [(value)]="formGroupStrategiesMarket.value.exchange" [placeholder]="'Select the exchange'">
+                        <mat-option *ngFor="let exchange of exchanges" [value]="exchange._id">{{ exchange.name }}</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Initial pair</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <input type="text" matInput formControlName="iniPair" [matAutocomplete]="ini" placeholder="Search initial pair">
+
+                      <mat-autocomplete #ini="matAutocomplete" (optionSelected)="setIni($event.option.value);">
+                        <mat-option *ngFor="let currencie of filteredOptions" [value]="currencie.symbol">
+                          {{ currencie.symbol }}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Final pair</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <input type="text" matInput formControlName="finPair" [matAutocomplete]="fin" placeholder="Search final pair">
+
+                      <mat-autocomplete #fin="matAutocomplete" (optionSelected)="setFin($event.option.value);">
+                        <mat-option *ngFor="let currencie of filteredOptions" [value]="currencie.symbol">
+                          {{ currencie.symbol }}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Mid Price Type</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="midPriceType" [(value)]="formGroupStrategiesMarket.value.midPriceType" [placeholder]="'Select the mid price type'">
+                        <mat-option [value]="'DEFAULT'">Default</mat-option>
+                        <mat-option [value]="'LAST_PRICE'">Last Price</mat-option>
+                        <mat-option [value]="'PRECISION'">Precision</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Initial Mid Price Type</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="initialMidPriceType" [(value)]="formGroupStrategiesMarket.value.initialMidPriceType" [placeholder]="'Select the initial mid price type'">
+                        <mat-option [value]="'INSIDE'">Inside</mat-option>
+                        <mat-option [value]="'OUTSIDE'">Outside</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Exchanges Inside</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select multiple formControlName="exchangesInside" [(value)]="formGroupStrategiesMarket.value.exchangesInside" [placeholder]="'Select exchanges inside'">
+                        <mat-option [value]="exchange" *ngFor="let exchange of exchangesInside;">{{ exchange }}</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Exchanges Outside</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select multiple formControlName="exchangesOutside" [(value)]="formGroupStrategiesMarket.value.exchangesOutside" [placeholder]="'Select exchanges outside'">
+                        <mat-option [value]="exchange" *ngFor="let exchange of exchangesOutside;">{{ exchange }}</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Forex</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="forexEnable" [(value)]="formGroupStrategiesMarket.value.forexEnable" [placeholder]="'Enabled or disabled Forex'">
+                        <mat-option [value]="false" [disabled]="onePairIsBRL()">Disabled</mat-option>
+                        <mat-option [value]="true">Enabled</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Market Forex</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="subscribe" [(value)]="formGroupStrategiesMarket.value.subscribe" [placeholder]="'Select market Forex'">
+                        <mat-option [value]="'FOREXAPI_CURRENCY_TICKER_USD_BRL'">FOREXAPI_CURRENCY_TICKER_USD_BRL</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Configuration
+                </mat-panel-title>
+
+                <mat-panel-description>
+                  Configure the strategy
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="ltl">
+                <fieldset>
+                  <span>{{ formGroupStrategiesMarket.value.ask }}% of ASK</span>
+
+                  <mat-slider [thumbLabel]="true" [min]="-100" [max]="100" [value]="formGroupStrategiesMarket.value.ask" (input)="calcBidAsk($event, 'ask');"></mat-slider>
+                </fieldset>
+              </div>
+
+              <div class="rtl">
+                <fieldset>
+                  <span>{{ formGroupStrategiesMarket.value.bid }}% of BID</span>
+
+                  <mat-slider [thumbLabel]="true" [min]="-100" [max]="100" [value]="formGroupStrategiesMarket.value.bid" (input)="calcBidAsk($event, 'bid');" [invert]="true"></mat-slider>
+                </fieldset>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Wallet</span>
+
+                    <input type="number" min="0" formControlName="wallet" placeholder="Write your wallet">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Mid Price</span>
+
+                    <input type="number" min="0" formControlName="midPrice" placeholder="Write your mid price">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Default Spread</span>
+
+                    <input type="number" min="0" formControlName="defaultSpread" placeholder="Write your min spread">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Amount Orders</span>
+
+                    <input type="number" min="0" max="{{ formGroupStrategiesMarket.value.maxOrders }}" formControlName="amountOrders" placeholder="Write your amount orders">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Max Orders</span>
+
+                    <input type="number" min="0" formControlName="maxOrders" placeholder="Write your max orders">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Order Size</span>
+
+                    <input type="number" min="0" step=".01" formControlName="orderSize" placeholder="Write your order size">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Step Size</span>
+
+                    <input type="number" min="0" step=".01" formControlName="stepSize" placeholder="Write your step size">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Orders Interval</span>
+
+                    <input type="number" min="0" step=".01" formControlName="ordersInterval" placeholder="Write your order orders interval">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Fraction Perc.</span>
+
+                    <input type="number" min="0" step=".01" formControlName="fractionPercent" placeholder="Write your fraction percent">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Fraction Quant.</span>
+
+                    <input type="number" formControlName="fractionQuantity" placeholder="Write your fraction quantity">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Stop Loss</span>
+
+                    <input type="number" min="0" step=".01" formControlName="stopLoss" placeholder="Write your stop loss">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Reference Band</span>
+
+                    <input type="number" min="0" formControlName="prexBand" placeholder="Write your reference band">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>External Percent</span>
+
+                    <input type="number" min="0" formControlName="externalPercent" placeholder="Write your external percent">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Internal Percent</span>
+
+                    <input type="number" min="0" formControlName="internalPercent" placeholder="Write your internal percent">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Interval Status</span>
+
+                    <input type="number" min="0" formControlName="statusInterval" placeholder="Write your interval status">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Balance Reload</span>
+
+                    <input type="number" min="0" formControlName="dataReloadInterval" placeholder="Write your balance reload">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Exposition Limit</span>
+
+                    <input type="number" min="0" formControlName="expLimit" placeholder="Write your exposition limit">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Exposition Limit Step</span>
+
+                    <input type="number" min="0" step="0.1" formControlName="expLimitStep" placeholder="Write your exposition limit step">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Exposition Spred</span>
+
+                    <input type="number" min="0" step="0.1" formControlName="expSpread" placeholder="Write your exposition spred">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Size Multiply</span>
+
+                    <input type="number" min="0" step="0.1" formControlName="sizeMultiply" placeholder="Write your size multiply">
+                  </fieldset>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <button mat-button [disabled]="formGroupStrategiesMarket.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+
+        <div class="col-md-8">
+          <app-view-strategy [config]="formGroupStrategiesMarket.value" [wallet]="formGroupStrategiesMarket.value.wallet" [midPrice]="formGroupStrategiesMarket.value.midPrice"></app-view-strategy>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="type == 'exchange-general'">
+    <form [formGroup]="formGroupExchangeGeneral">
+      <div class="row">
+        <div class="col-md-6">
+          <fieldset>
+            <span>Exchange name</span>
+
+            <input type="text" formControlName="name" placeholder="Write exchange name">
+          </fieldset>
+        </div>
+
+        <div class="col-md-6">
+          <fieldset>
+            <span>Exchange url</span>
+
+            <input type="text" formControlName="url" placeholder="Write exchange url">
+          </fieldset>
+        </div>
+
+        <div class="col-md-4">
+          <fieldset>
+            <span>Exchange icon</span>
+
+            <input type="file" accept="image/*" (change)="readThisIconFileBase64($event)">
+          </fieldset>
+        </div>
+
+        <div class="col-md-4">
+          <fieldset>
+            <span>Time Requests</span>
+
+            <input type="number" min="0" formControlName="minTimeBetweenRequests" placeholder="Write your min time between requests">
+          </fieldset>
+        </div>
+
+        <div class="col-md-4">
+          <fieldset>
+            <span>Max Requests</span>
+
+            <input type="number" min="0" formControlName="maxConcurrentRequests" placeholder="Write your max requests">
+          </fieldset>
+        </div>
+
+        <div class="col-md-12">
+          <button mat-button class="mgr-top" [disabled]="formGroupExchangeGeneral.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="type == 'profiles-general'">
+    <form [formGroup]="formGroupProfileGeneral">
+      <div class="row">
+        <div class="col-md-12">
+          <fieldset>
+            <span>Profile id</span>
+
+            <input type="text" formControlName="id" pattern="[a-z]*" placeholder="Write profile id" readonly="true" *ngIf="nameButton == 'Edit Profile'">
+
+            <input type="text" formControlName="id" pattern="[a-z]*" placeholder="Write profile id" *ngIf="nameButton != 'Edit Profile'">
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <fieldset>
+            <span>Applications</span>
+          </fieldset>
+
+          <ng-container>
+            <mat-accordion *ngFor="let profile of profiles;">
+              <mat-expansion-panel [disabled]="true" #mep="matExpansionPanel" [expanded]="expansionPanelExpanded[profile.name]">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <mat-checkbox [disableRipple]="true" [checked]="expansionPanelExpanded[profile.name]" (click)="expansionPanel(mep, mTable, profile.name);">{{ profile.name }}</mat-checkbox>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <app-table #mTable [displayedColumns]="displayedColumns" [dataSource]="profile.pages" [checkboxArr]="checkboxArr" [prefixCheckbox]="profile.name" (checkbox)="changeCheckboxArr($event);" (rule)="setRule($event);"></app-table>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </ng-container>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button mat-button class="mgr-top" [disabled]="formGroupProfileGeneral.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="type == 'subscriber-general'">
+    <form [formGroup]="formGroupSubscriberGeneral">
+      <div class="row">
+        <div class="col">
+          <fieldset>
+            <span>Subscriber name</span>
+
+            <input type="text" formControlName="name" placeholder="Write subscriber name">
+          </fieldset>
+        </div>
+
+        <div class="col">
+          <fieldset>
+            <span>Type</span>
+
+            <mat-form-field [floatLabel]="'never'">
+              <mat-select [(value)]="formGroupSubscriberGeneral.value.type" [placeholder]="'Select the type'" (selectionChange)="setType(formGroupSubscriberGeneral.value.type)">
+                <mat-option *ngFor="let type of topicTypes" [value]="type">{{ type }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </fieldset>
+        </div>
+
+        <div class="col">
+          <fieldset>
+            <span>Group</span>
+
+            <mat-form-field [floatLabel]="'never'">
+              <mat-select [(value)]="formGroupSubscriberGeneral.value.group" [placeholder]="'Select the group'" (selectionChange)="setGroup(formGroupSubscriberGeneral.value.group)">
+                <mat-option [value]="'ALL'">ALL</mat-option>
+                <mat-option [value]="''">NONE</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button mat-button class="mgr-top" [disabled]="formGroupSubscriberGeneral.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="type == 'groups-general'">
+    <form [formGroup]="formGroupGroupsGeneral">
+      <div class="row">
+        <div class="col">
+          <fieldset>
+            <span>Group name</span>
+
+            <input type="text" formControlName="name" placeholder="Write group name">
+          </fieldset>
+        </div>
+
+        <div class="col">
+          <fieldset>
+            <span>Group id</span>
+
+            <input type="number" formControlName="groupId" placeholder="Write group id">
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button mat-button class="mgr-top" [disabled]="formGroupGroupsGeneral.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="type == 'strategies-telegram'">
+    <form [formGroup]="formGroupStrategiesTelegram">
+      <div class="row">
+        <div class="col">
+          <mat-accordion>
+            <mat-expansion-panel [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Basic information
+                </mat-panel-title>
+
+                <mat-panel-description>
+                  Basic information of your strategy
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Strategy name</span>
+
+                    <input type="text" formControlName="name" placeholder="Write strategy name">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Exchange</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="exchange" [(value)]="formGroupStrategiesTelegram.value.exchange" [placeholder]="'Select the exchange'">
+                        <mat-option *ngFor="let exchange of exchanges" [value]="exchange._id">{{ exchange.name }}</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Order size</span>
+
+                    <input type="number" formControlName="size" placeholder="Write the order size">
+                  </fieldset>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <mat-accordion>
+            <mat-expansion-panel [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Configuration
+                </mat-panel-title>
+
+                <mat-panel-description>
+                  Configure the strategy
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <app-dragdrop-xlsx [type]="'strategies-telegram'" [formData]="formData" (setFormData)="setFormData($event);"></app-dragdrop-xlsx>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <button mat-button [disabled]="formGroupStrategiesTelegram.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="type == 'strategies-garch'">
+    <form [formGroup]="formGroupStrategiesGarch">
+      <div class="row">
+        <div class="col">
+          <mat-accordion>
+            <mat-expansion-panel [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Basic information
+                </mat-panel-title>
+
+                <mat-panel-description>
+                  Basic information of your strategy
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Strategy name</span>
+
+                    <input type="text" formControlName="name" placeholder="Write strategy name">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Exchange</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="exchange" [(value)]="formGroupStrategiesGarch.value.exchange" [placeholder]="'Select the exchange'">
+                        <mat-option *ngFor="let exchange of exchanges" [value]="exchange._id">{{ exchange.name }}</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Trade window</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="tradeWindow" [(value)]="formGroupStrategiesGarch.value.tradeWindow" [placeholder]="'Select the trade window'">
+                        <mat-option [value]="'1MIN'">1MIN</mat-option>
+
+                        <mat-option [value]="'2MIN'">2MIN</mat-option>
+
+                        <mat-option [value]="'3MIN'">3MIN</mat-option>
+
+                        <mat-option [value]="'4MIN'">4MIN</mat-option>
+
+                        <mat-option [value]="'5MIN'">5MIN</mat-option>
+
+                        <mat-option [value]="'6MIN'">6MIN</mat-option>
+
+                        <mat-option [value]="'7MIN'">7MIN</mat-option>
+
+                        <mat-option [value]="'8MIN'">8MIN</mat-option>
+
+                        <mat-option [value]="'9MIN'">9MIN</mat-option>
+
+                        <mat-option [value]="'10MIN'">10MIN</mat-option>
+
+                        <mat-option [value]="'15MIN'">15MIN</mat-option>
+
+                        <mat-option [value]="'30MIN'">30MIN</mat-option>
+
+                        <mat-option [value]="'1HRS'">1HRS</mat-option>
+
+                        <mat-option [value]="'2HRS'">2HRS</mat-option>
+
+                        <mat-option [value]="'4HRS'">4HRS</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Initial pair</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <input type="text" matInput formControlName="iniPair" [matAutocomplete]="ini" placeholder="Search initial pair">
+
+                      <mat-autocomplete #ini="matAutocomplete" (optionSelected)="setIni($event.option.value);">
+                        <mat-option *ngFor="let currencie of filteredOptions" [value]="currencie.symbol">
+                          {{ currencie.symbol }}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Final pair</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <input type="text" matInput formControlName="finPair" [matAutocomplete]="fin" placeholder="Search final pair">
+
+                      <mat-autocomplete #fin="matAutocomplete" (optionSelected)="setFin($event.option.value);">
+                        <mat-option *ngFor="let currencie of filteredOptions" [value]="currencie.symbol">
+                          {{ currencie.symbol }}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Take profit</span>
+
+                    <input type="number" min="0" step="1" formControlName="takeProfit" placeholder="Write take profit">
+                  </fieldset>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <mat-accordion>
+            <mat-expansion-panel [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Configuration
+                </mat-panel-title>
+
+                <mat-panel-description>
+                  Configure the strategy
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Order type</span>
+
+                    <mat-form-field [floatLabel]="'never'">
+                      <mat-select formControlName="orderType" [(value)]="formGroupStrategiesGarch.value.orderType" [placeholder]="'Select the order type'">
+                        <mat-option [value]="'LIMIT'">LIMIT</mat-option>
+
+                        <mat-option [value]="'MARKET'">MARKET</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Candle time</span>
+
+                    <input type="number" min="1" formControlName="candleTime" placeholder="Write your candle time">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Value of usd</span>
+
+                    <input type="number" min="1" formControlName="usd" placeholder="Write your value usd">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Expose</span>
+
+                    <input type="number" min="1" formControlName="expose" placeholder="Write your expose">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Fee</span>
+
+                    <input type="number" min="0" step="0.001" formControlName="fee" placeholder="Write your fee">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Stop</span>
+
+                    <input type="number" min="0" step="0.01" formControlName="stop" placeholder="Write your stop">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Max samples</span>
+
+                    <input type="number" min="0" formControlName="maxSamples" placeholder="Write your max samples">
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <fieldset>
+                    <span>Idle minutes after stop</span>
+
+                    <input type="number" min="1" formControlName="idleMinutesAfterStop" placeholder="Write your idle minutes after stop">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Stop limit</span>
+
+                    <input type="number" min="1" formControlName="stopLimit" placeholder="Write your stop limit">
+                  </fieldset>
+                </div>
+
+                <div class="col">
+                  <fieldset>
+                    <span>Stop limit trigger</span>
+
+                    <input type="number" min="1" formControlName="stopLimitTrigger" placeholder="Write your stop limit trigger">
+                  </fieldset>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <button mat-button [disabled]="formGroupStrategiesGarch.invalid" (click)="rawSend();">{{ nameButton }}</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+</div>

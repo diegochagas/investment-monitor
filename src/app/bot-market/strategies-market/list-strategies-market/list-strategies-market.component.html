@@ -1,0 +1,3 @@
+<div id="list-strategies-market">
+  <app-table [customStyle]="{ 'max-height': 'calc(100vh - 120px)' }" [displayedColumns]="displayedColumns" [dataSource]="dataSource" [tabs]="tabs" [tabsArr]="tabsArr" (tab)="setTab($event);" (edit)="editTrigger($event);" (delete)="deleteTrigger($event);"></app-table>
+</div>

@@ -1,0 +1,15 @@
+<div id="dashboard-garch">
+  <ng-container *ngIf="id === undefined">
+    <app-robots-list [robotsList]="robotsList" (selectedRobot)="selectedRobot($event);"></app-robots-list>
+  </ng-container>
+
+  <ng-container *ngIf="id">
+    <div class="garch-chart" [chart]="garchChart"></div>
+
+    <div class="right">
+      <button type="button" class="button-xlsx" (click)="downloadXlsx();">Download XLSX</button>
+    </div>
+
+    <app-table [customStyle]="{ 'max-height': '25vh' }" [displayedColumns]="displayedColumns" [dataSource]="dataSource" [tabs]="tabs" [tabsArr]="tabsArr" (tab)="setTab($event);" (tr)="addLabel($event);"></app-table>
+  </ng-container>
+</div>

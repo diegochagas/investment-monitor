@@ -1,0 +1,55 @@
+<div id="dashboard-market">
+  <ng-container *ngIf="id === undefined">
+    <app-robots-list [robotsList]="robotsList" (selectedRobot)="selectedRobot($event);"></app-robots-list>
+  </ng-container>
+
+  <ng-container *ngIf="id">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <app-input-date [title]="'Date range'" [selectedDate]="selectedDate" (selected)="setSelectedDate($event);"></app-input-date>
+          </div>
+        </div>
+
+        <app-table [displayedColumns]="displayedColumnsInfo" [dataSource]="dataSourceInfo"></app-table>
+
+        <div class="row">
+          <div class="col">
+            <form class="liquidateForm">
+              <fieldset>
+                <span>Liquidate orders</span>
+
+                <input type="number" step="0.01" placeholder="Write the value order" [(ngModel)]="liquidateValue" name="liquidate">
+              </fieldset>
+
+              <button mat-button type="button" (click)="liquidateOrder();">Liquidate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div class="midPrice">BTC $ {{ midPrice }}</div>
+
+        <div [chart]="marketChart"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+
+    <app-exposition [exposition]="exposition"></app-exposition>
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+
+    <app-table [displayedColumns]="displayedColumnsOrders" [dataSource]="dataSourceOrders" [tabs]="tabs" [tabsArr]="tabsArr" (tab)="setTab($event);"></app-table>
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+  </ng-container>
+</div>

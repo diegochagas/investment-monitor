@@ -1,0 +1,31 @@
+@import "../../../themes/styles-default";
+
+@import "../../../themes/white-label";
+
+#dashboard-garch {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  .right {
+    text-align: right;
+  }
+
+  .garch-chart {
+    margin-bottom: 15px;
+    height: calc(60vh - 65px);
+  }
+
+  .button-xlsx {
+    display: inline-block;
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    @include border-radius(5px);
+  }
+}
