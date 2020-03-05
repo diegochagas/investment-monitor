@@ -1,0 +1,5 @@
+{
+    "jest.debugMode": true,
+    "jest.pathToJest": "jest --detectOpenHandles",
+    "jest.pathToConfig": "./jest.config.js"
+}

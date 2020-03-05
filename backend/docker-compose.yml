@@ -1,0 +1,47 @@
+version: '3'
+services:
+#  api:
+#    build:
+#      context: .
+#    ports:
+#      - "3000:3000"
+#    depends_on:
+#      - kafka
+#    container_name: market-maker-api
+  # front:
+  #   image: mmfront
+  #   ports:
+  #     - "8080:80"
+  #   container_name: market-maker-spa
+  producer:
+    image: vitordelfino/kafkaproducer
+    ports:
+      - "3031:3031"
+    depends_on:
+      - kafka
+    container_name: kafka-producer
+    environment:
+      KAFKA_HOST: localhost:9092
+  # consumer:
+  #   image: kafkaconsumer
+  #   ports:
+  #     - "3032:3032"
+  #   depends_on:
+  #     - producer
+  #   container_name: kafka-consumer
+  #   environment:
+  #     KAFKA_HOST: kafka:9092
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    container_name: kafka
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    #  KAFKA_CREATE_TOPICS: "BOT_EVENTS_GARCH:1:1,BOT_EVENTS_TELEGRAM:1:1,BOT_EVENTS_MARKETMAKER:1:1"
+    depends_on:
+      - "zookeeper"

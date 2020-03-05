@@ -1,0 +1,32 @@
+{"message":"BitfolioExchangeManager::start","level":"debug","timestamp":"2019-11-05T18:33:48.031Z"}
+{"message":"Bootstrap::loadServices","level":"debug","timestamp":"2019-11-05T18:33:48.032Z"}
+{"message":"ExchangeWrapper::loadExchanges - [\"atlas\",\"binance\",\"bitfinex\",\"bittrex\",\"cex\",\"cryptopia\",\"exmo\",\"exx\",\"gate\",\"hitbtc\",\"huobi\",\"liqui\",\"okex\",\"poloniex\",\"tidex\",\"acx\",\"allcoin\",\"anxpro\",\"bcex\",\"bequant\",\"bibox\",\"bigone\",\"bit2c\",\"bitbank\",\"bitbay\",\"bitflyer\",\"bitforex\",\"bithumb\",\"bitkk\",\"bitlish\",\"bitmart\",\"bitmex\",\"bitso\",\"bitstamp\",\"bitz\",\"bl3p\",\"bleutrade\",\"braziliex\",\"btcalpha\",\"btcbox\",\"btcchina\",\"btcmarkets\",\"btctradeim\",\"btctradeua\",\"btcturk\",\"buda\",\"chilebit\",\"cobinhood\",\"coinbasepro\",\"coinbaseprime\",\"coincheck\",\"coinegg\",\"coinex\",\"coinexchange\",\"coinfalcon\",\"coinfloor\",\"coingi\",\"coinmarketcap\",\"coinmate\",\"coinone\",\"coinspot\",\"cointiger\",\"coolcoin\",\"coss\",\"crex24\",\"deribit\",\"digifinex\",\"dsx\",\"dx\",\"fcoin\",\"fcoinjp\",\"flowbtc\",\"foxbit\",\"fybse\",\"gemini\",\"ice3x\",\"idex\",\"independentreserve\",\"indodax\",\"itbit\",\"kkex\",\"kraken\",\"kucoin\",\"kuna\",\"lakebtc\",\"latoken\",\"lbank\",\"liquid\",\"livecoin\",\"luno\",\"lykke\",\"mandala\",\"mercado\",\"mixcoins\",\"negociecoins\",\"oceanex\",\"okcoincny\",\"okcoinusd\",\"paymium\",\"rightbtc\",\"southxchange\",\"stronghold\",\"surbitcoin\",\"theocean\",\"therock\",\"tidebit\",\"upbit\",\"vaultoro\",\"vbtc\",\"virwox\",\"xbtce\",\"yobit\",\"zaif\",\"zb\"]","level":"debug","timestamp":"2019-11-05T18:33:48.032Z"}
+{"message":"SecretManagerService::loadService","level":"debug","timestamp":"2019-11-05T18:33:48.353Z"}
+{"message":"SecretManagerService::awsConfiguration - {\"region\":\"us-west-2\"} ","level":"debug","timestamp":"2019-11-05T18:33:48.353Z"}
+{"message":"ExchangeService::accountBalance - {\"exchanges\":{\"bitmex\":\"exchange/credentials/bitmex\"}}","level":"debug","timestamp":"2019-11-05T18:33:48.375Z"}
+{"message":"CredentialsService::loadCredentials","level":"debug","timestamp":"2019-11-05T18:33:48.375Z"}
+{"message":"CredentialsService::loadWallets - {\"bitmex\":\"exchange/credentials/bitmex\"}","level":"debug","timestamp":"2019-11-05T18:33:48.376Z"}
+{"message":"CredentialsService::readFile - \"./wallets.json\"","level":"debug","timestamp":"2019-11-05T18:33:48.376Z"}
+{"message":"CredentialsService::loadWallets file empty","level":"debug","timestamp":"2019-11-05T18:33:48.379Z"}
+{"message":"CredentialsService::writeFile - {\"exchange/credentials/bitmex\":[{\"key\":\"oQKWxC17zxGENOEMLYcehyhJ\",\"secret\":\"xTatjawMBgji5B1GFe1fqXLAH7-RnVm1ug4z5lxoaZ_GpLjg\"}]}","level":"debug","timestamp":"2019-11-05T18:33:49.527Z"}
+{"message":"AccountBalanceService::accountBalance","level":"debug","timestamp":"2019-11-05T18:33:49.530Z"}
+{"message":"CCXTWrapper::accountBalance","level":"debug","timestamp":"2019-11-05T18:33:49.530Z"}
+{"message":"CCXTWrapper::authenticate","level":"debug","timestamp":"2019-11-05T18:33:49.530Z"}
+{"message":"ExchangeService::accountBalance - {\"exchanges\":{\"binance\":\"exchange/credentials/binance/garch1\"}}","level":"debug","timestamp":"2019-11-05T18:34:11.158Z"}
+{"message":"CredentialsService::loadCredentials","level":"debug","timestamp":"2019-11-05T18:34:11.158Z"}
+{"message":"CredentialsService::loadWallets - {\"binance\":\"exchange/credentials/binance/garch1\"}","level":"debug","timestamp":"2019-11-05T18:34:11.158Z"}
+{"message":"CredentialsService::readFile - \"./wallets.json\"","level":"debug","timestamp":"2019-11-05T18:34:11.158Z"}
+{"message":"CredentialsService::loadWallets - Not have secret (exchange/credentials/binance/garch1), getting on secret manager.","level":"debug","timestamp":"2019-11-05T18:34:11.160Z"}
+{"message":"CredentialsService::writeFile - {\"exchange/credentials/bitmex\":[{\"key\":\"oQKWxC17zxGENOEMLYcehyhJ\",\"secret\":\"xTatjawMBgji5B1GFe1fqXLAH7-RnVm1ug4z5lxoaZ_GpLjg\"}],\"exchange/credentials/binance/garch1\":[{\"key\":\"YecQa8auGfzWbsMzzyonMOMhJxWjgW60tTOxFPHAzNQr774G9376pBXGmmDyqRCA\",\"secret\":\"RBGDwJEMGYbCZ5iQeNuJ8c8cIk28DbqhohGGuWtSbSf5KwmIyTps701WDiqUp6jY\"}]}","level":"debug","timestamp":"2019-11-05T18:34:12.064Z"}
+{"message":"CredentialsService::loadWallets file load","level":"debug","timestamp":"2019-11-05T18:34:12.065Z"}
+{"message":"AccountBalanceService::accountBalance","level":"debug","timestamp":"2019-11-05T18:34:12.065Z"}
+{"message":"CCXTWrapper::accountBalance","level":"debug","timestamp":"2019-11-05T18:34:12.065Z"}
+{"message":"CCXTWrapper::authenticate","level":"debug","timestamp":"2019-11-05T18:34:12.065Z"}
+{"message":"ExchangeService::accountBalance - {\"exchanges\":{\"binance\":\"exchange/credentials/binance/garch1\"}}","level":"debug","timestamp":"2019-11-05T18:34:27.394Z"}
+{"message":"CredentialsService::loadCredentials","level":"debug","timestamp":"2019-11-05T18:34:27.394Z"}
+{"message":"CredentialsService::loadWallets - {\"binance\":\"exchange/credentials/binance/garch1\"}","level":"debug","timestamp":"2019-11-05T18:34:27.394Z"}
+{"message":"CredentialsService::readFile - \"./wallets.json\"","level":"debug","timestamp":"2019-11-05T18:34:27.394Z"}
+{"message":"CredentialsService::loadWallets file load","level":"debug","timestamp":"2019-11-05T18:34:27.395Z"}
+{"message":"AccountBalanceService::accountBalance","level":"debug","timestamp":"2019-11-05T18:34:27.395Z"}
+{"message":"CCXTWrapper::accountBalance","level":"debug","timestamp":"2019-11-05T18:34:27.395Z"}
+{"message":"CCXTWrapper::authenticate","level":"debug","timestamp":"2019-11-05T18:34:27.395Z"}

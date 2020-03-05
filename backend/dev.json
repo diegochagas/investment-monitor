@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "investment-backoffice",
+    "script": "./build/src/index.js",
+    "args": "",
+    "node_args": "",
+    "watch": false,
+    "source_map_support": true,
+    "env": {
+    },
+    "env_production": {
+      "NODE_ENV": "development"
+    }
+  }]
+}

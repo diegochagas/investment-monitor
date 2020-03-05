@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/app/commons/kafka-handlers/bot-events-order-handler.ts" line="19" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ccd07b7-6e8e-4e25-a2f2-dbe1f8792b7e" name="Default Changelist" comment="update MD" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="691" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/commons/services/service.exchange-alias.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-897">
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/controllers/secret-keys.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/routes/secret-keys.route.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/lib/SecretManagerService.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-111">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/services/service.secret-keys.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logger</find>
+      <find>mockEmptyExchange</find>
+      <find>KafkaProjectName</find>
+      <find>ProjectNameKafka</find>
+      <find>ProjectName</find>
+      <find>req.header(HEADER_PROJECT_NAME) as string</find>
+      <find>KafkaConsumerCryptodataGroupall</find>
+      <find>connectConsumers</find>
+      <find>BootsStrapKafkaConsumerCryptoData</find>
+      <find>kafkaProducer</find>
+      <find>sum -</find>
+      <find>LIQUIDATE</find>
+      <find>TopicSchema</find>
+      <find>ProducerRe</find>
+      <find>ProduceRe</find>
+      <find>message</find>
+      <find>\n</find>
+      <find>BOT_EVENTS_TELE</find>
+      <find>{ number }</find>
+      <find>engine</find>
+      <find>DB_NAME</find>
+      <find>DB_NAME_MONITOR</find>
+      <find>exchange</find>
+      <find>Exchange</find>
+      <find>@group exchange-alias</find>
+      <find>AWS_ACCESS_KEY</find>
+      <find>404</find>
+      <find>lodash</find>
+      <find>group</find>
+      <find>findOneAndUpdate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>400</replace>
+      <replace>SystemErrors.strategy</replace>
+      <replace>res.locals</replace>
+      <replace>SystemErrors.STRATEGY_</replace>
+      <replace>DB_NAME_MARKET_MAKER</replace>
+      <replace>../../helpers/</replace>
+      <replace>topicRoutes</replace>
+      <replace>ServiceStrategy</replace>
+      <replace>StrategyGarch</replace>
+      <replace>StrategyGarchSchema</replace>
+      <replace>Config</replace>
+      <replace>X-STRATEGY-TYPE</replace>
+      <replace>ProduceRequest</replace>
+      <replace>logger.info</replace>
+      <replace>Project</replace>
+      <replace>HeaderProject[req.header(HEADER_PROJECT_NAME) as string]</replace>
+      <replace>BootsStrapKafkaConsumerCryptoDataHardCode</replace>
+      <replace>BootsStrapKafkaConsumerCryptoData</replace>
+      <replace>/\</replace>
+      <replace>{ integer }</replace>
+      <replace>exchange-alias</replace>
+      <replace>ExchangeAlias</replace>
+      <replace>@group exchange alias</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Vitor Delfino &lt;vitor.delfino@atlasproj.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/cron" />
+      </map>
+    </option>
+  </component>
+  <component name="GotoFileConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name=".env file" />
+      <filtered-out-file-type name="ActionScript" />
+      <filtered-out-file-type name="Angular2Html" />
+      <filtered-out-file-type name="ASP" />
+      <filtered-out-file-type name="AspectJ" />
+      <filtered-out-file-type name="Bazaar file" />
+      <filtered-out-file-type name="C#" />
+      <filtered-out-file-type name="C++" />
+      <filtered-out-file-type name="Chef file" />
+      <filtered-out-file-type name="CloudFoundry file" />
+      <filtered-out-file-type name="CoffeeScript" />
+      <filtered-out-file-type name="CSS" />
+      <filtered-out-file-type name="Cucumber" />
+      <filtered-out-file-type name="CVP" />
+      <filtered-out-file-type name="Cvs file" />
+      <filtered-out-file-type name="Darcs file" />
+      <filtered-out-file-type name="DGM File Type" />
+      <filtered-out-file-type name="Dictionary" />
+      <filtered-out-file-type name="Docker file" />
+      <filtered-out-file-type name="Dockerfile" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="Eclipse" />
+      <filtered-out-file-type name="ECMAScript 6" />
+      <filtered-out-file-type name="EditorConfig" />
+      <filtered-out-file-type name="ElasticBeanstalk file" />
+      <filtered-out-file-type name="Enforced Plain Text" />
+      <filtered-out-file-type name="Erlang" />
+      <filtered-out-file-type name="ESLint" />
+      <filtered-out-file-type name="ESLint file" />
+      <filtered-out-file-type name="Floobits file" />
+      <filtered-out-file-type name="Flow" />
+      <filtered-out-file-type name="Fossil file" />
+      <filtered-out-file-type name="FTL" />
+      <filtered-out-file-type name="Git exclude file" />
+      <filtered-out-file-type name="Git file" />
+      <filtered-out-file-type name="Google Cloud file" />
+      <filtered-out-file-type name="GraphQL" />
+      <filtered-out-file-type name="GraphQL Endpoint" />
+      <filtered-out-file-type name="GraphQL Endpoint Doc" />
+      <filtered-out-file-type name="Groovy" />
+      <filtered-out-file-type name="Haml" />
+      <filtered-out-file-type name="Haskell" />
+      <filtered-out-file-type name="htaccess" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="HTTP Request" />
+      <filtered-out-file-type name="IDEA_MODULE" />
+      <filtered-out-file-type name="IDEA_PROJECT" />
+      <filtered-out-file-type name="IDEA_WORKSPACE" />
+      <filtered-out-file-type name="IDL" />
+      <filtered-out-file-type name="Ignore file" />
+      <filtered-out-file-type name="JAVA" />
+      <filtered-out-file-type name="JavaFX" />
+      <filtered-out-file-type name="JavaScript" />
+      <filtered-out-file-type name="Jest Snapshot" />
+      <filtered-out-file-type name="Jetpack file" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSCS" />
+      <filtered-out-file-type name="JSHELL" />
+      <filtered-out-file-type name="JSHint" />
+      <filtered-out-file-type name="JSHint file" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSON5" />
+      <filtered-out-file-type name="JSP" />
+      <filtered-out-file-type name="JsTestDriver" />
+      <filtered-out-file-type name="JSX Harmony" />
+      <filtered-out-file-type name="Kotlin" />
+      <filtered-out-file-type name="Kubernetes Helm file" />
+      <filtered-out-file-type name="Less" />
+      <filtered-out-file-type name="Literate CoffeeScript" />
+      <filtered-out-file-type name="Log" />
+      <filtered-out-file-type name="Manifest" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="Mercurial file" />
+      <filtered-out-file-type name="Monotone file" />
+      <filtered-out-file-type name="MXML" />
+      <filtered-out-file-type name="Nodemon file" />
+      <filtered-out-file-type name="Npm file" />
+      <filtered-out-file-type name="NuxtJS file" />
+      <filtered-out-file-type name="PATCH" />
+      <filtered-out-file-type name="Perforce file" />
+      <filtered-out-file-type name="Perl" />
+      <filtered-out-file-type name="PHP" />
+      <filtered-out-file-type name="PLAIN_TEXT" />
+      <filtered-out-file-type name="Play" />
+      <filtered-out-file-type name="Prettier file" />
+      <filtered-out-file-type name="Properties" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="RNG Compact" />
+      <filtered-out-file-type name="Sass" />
+      <filtered-out-file-type name="Scratch" />
+      <filtered-out-file-type name="SCSS" />
+      <filtered-out-file-type name="Smali" />
+      <filtered-out-file-type name="SourceMap" />
+      <filtered-out-file-type name="SPI" />
+      <filtered-out-file-type name="SQL" />
+      <filtered-out-file-type name="StyleLint file" />
+      <filtered-out-file-type name="Stylint file" />
+      <filtered-out-file-type name="Stylus" />
+      <filtered-out-file-type name="SVG" />
+      <filtered-out-file-type name="Swagger Codegen file" />
+      <filtered-out-file-type name="Team Foundation file" />
+      <filtered-out-file-type name="tsconfig" />
+      <filtered-out-file-type name="TypeScript JSX" />
+      <filtered-out-file-type name="Up file" />
+      <filtered-out-file-type name="VTL" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="YAML" />
+      <filtered-out-file-type name="YAML_EX" />
+      <filtered-out-file-type name="yarn.lock" />
+      <filtered-out-file-type name="Angular Metadata JSON" />
+      <filtered-out-file-type name="ARCHIVE" />
+      <filtered-out-file-type name="dependency diagram" />
+      <filtered-out-file-type name="Image" />
+      <filtered-out-file-type name="KJSM" />
+      <filtered-out-file-type name="KNM" />
+      <filtered-out-file-type name="kotlin_builtins" />
+      <filtered-out-file-type name="kotlin_module" />
+      <filtered-out-file-type name="Native" />
+      <filtered-out-file-type name="ResourceBundle" />
+      <filtered-out-file-type name="SWF" />
+      <filtered-out-file-type name="UML" />
+      <filtered-out-file-type name="UNKNOWN" />
+      <filtered-out-file-type name="CLASS" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/commons/kafka-handlers/bot-events-order-handler.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/kafka-handlers/bot-events-status-handler.ts" />
+        <option value="$PROJECT_DIR$/src/shared/db/db-.ts" />
+        <option value="$PROJECT_DIR$/src/infra/kafka/kafka-consumer-crypto-data.ts" />
+        <option value="$PROJECT_DIR$/src/infra/kafka/kafka-consumer-cryptodata-groupall.ts" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/app/bot-garch/services/service.band.ts" />
+        <option value="$PROJECT_DIR$/src/shared/middlewares/winston.ts" />
+        <option value="$PROJECT_DIR$/src/shared/services/service.coinapi.ts" />
+        <option value="$PROJECT_DIR$/src/app/strategy/controllers/header.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/models/topic/Topic.ts" />
+        <option value="$PROJECT_DIR$/src/infra/app-server.ts" />
+        <option value="$PROJECT_DIR$/src/infra/ws/ws-service.ts" />
+        <option value="$PROJECT_DIR$/src/app/strategy/models/strategy/configs/types/ConfigStrategyOrder.ts" />
+        <option value="$PROJECT_DIR$/test/strategy/service/strategy-market-maker.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/strategy/models/strategy/configs/types/ConfigGlobal.ts" />
+        <option value="$PROJECT_DIR$/src/app/market-maker/services/service.order.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/services/service.exchange-alias.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/controllers/exchange-alias.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/routes/exchange-alias.route.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/models/exchange/ExchangeAlias.ts" />
+        <option value="$PROJECT_DIR$/build.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/lib/ExchangeManager.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/services/service.account.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/routes/account.routes.ts" />
+        <option value="$PROJECT_DIR$/src/app/commons/app.ts" />
+        <option value="$PROJECT_DIR$/src/shared/models/enum/projectName.ts" />
+        <option value="$PROJECT_DIR$/src/swagger/exchanger-manager-swagger.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/env.yml" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/db/__mocks__/db.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/db/db.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/middlewares/index.ts" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/routes/csv-order.route.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/controllers/csv-order.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/models/user.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/controllers/user.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/routes/user.route.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/app.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/services/service.csv-order.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/services/service.user.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/app.ts" />
+        <option value="$PROJECT_DIR$/src/app/evo-manager/models/csv-order.ts" />
+        <option value="$PROJECT_DIR$/src/shared/models/ApplicationResponse.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/lib/SecretManagerService.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/services/service.secret-keys.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/routes/secret-keys.route.ts" />
+        <option value="$PROJECT_DIR$/src/app/exchange-manager/controllers/secret-keys.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="InvestmentMonitorBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvestmentMonitorBackend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvestmentMonitorBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvestmentMonitorBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvestmentMonitorBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvestmentMonitorBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvestmentMonitorBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvestmentMonitorBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvestmentMonitorBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvestmentMonitorBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvestmentMonitorBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvestmentMonitorBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="exchange-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/logs/app.log&#10;C:/Users/vitor.delfino/Workspace/InvestmentMonitorBackend/.env&#10;C:/Users/vitor.delfino/Workspace/InvestmentMonitorBackend/ecosystem.config.js" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/evo-manager/middlewares" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\shared\models" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\bot-garch\models" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\test\commons\service" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\commons\models\group" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\commons\services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\evo-manager\middlewares" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\evo-manager" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\exchange-manager\middlewares" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\swagger" />
+      <recent name="C:\Users\vitor.delfino\Workspace\InvestmentMonitorBackend\src\app\exchange-manager\routes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.All Tests">
+    <configuration name="Test Service Events Telegram" type="JavaScriptTestRunnerJest" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/bot-telegram/services/service-events-telegram.spec.ts" />
+      <test-names>
+        <test-name value="Test Service Events Telegram" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return ApplicationResponse error when getEvents" type="JavaScriptTestRunnerJest" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/bot-telegram/services/service-events-telegram.spec.ts" />
+      <test-names>
+        <test-name value="Test Service Events Telegram" />
+        <test-name value="&gt;&gt; LIST &lt;&lt;" />
+        <test-name value="should return ApplicationResponse error when getEvents" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return error when getEvents" type="JavaScriptTestRunnerJest" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/bot-telegram/services/service-events-telegram.spec.ts" />
+      <test-names>
+        <test-name value="Test Service Events Telegram" />
+        <test-name value="&gt;&gt; LIST &lt;&lt;" />
+        <test-name value="should return error when getEvents" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Service Liquidate" type="JavaScriptTestRunnerJest" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/market-maker/service/liquidate.spec.ts" />
+      <test-names>
+        <test-name value="Test Service Liquidate" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Strategy Service.&gt;&gt; CREATE &lt;&lt;.mock sucess.#MOCK should create Strategy" type="JavaScriptTestRunnerJest" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/test" />
+      <jest-options value="--coverage" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/strategy/service/strategy-market-maker.spec.ts" />
+      <test-names>
+        <test-name value="Test Strategy Service" />
+        <test-name value="&gt;&gt; CREATE &lt;&lt;" />
+        <test-name value="mock sucess" />
+        <test-name value="#MOCK should create Strategy" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" editBeforeRun="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Test Strategy Service.&gt;&gt; CREATE &lt;&lt;.mock sucess.#MOCK should create Strategy" />
+        <item itemvalue="Jest.Test Service Events Telegram" />
+        <item itemvalue="Jest.Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return ApplicationResponse error when getEvents" />
+        <item itemvalue="Jest.Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return error when getEvents" />
+        <item itemvalue="Jest.Test Service Liquidate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ccd07b7-6e8e-4e25-a2f2-dbe1f8792b7e" name="Default Changelist" comment="" />
+      <created>1559645422859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559645422859</updated>
+      <workItem from="1559645424331" duration="5134000" />
+      <workItem from="1559651072512" duration="12618000" />
+      <workItem from="1559762736724" duration="72000" />
+      <workItem from="1559933449920" duration="11136000" />
+      <workItem from="1560167721850" duration="252000" />
+      <workItem from="1560168022163" duration="39963000" />
+      <workItem from="1560435797370" duration="17242000" />
+      <workItem from="1560519232409" duration="11783000" />
+      <workItem from="1560773220791" duration="5191000" />
+      <workItem from="1560866128561" duration="36271000" />
+      <workItem from="1561374521225" duration="65592000" />
+      <workItem from="1562001523912" duration="11676000" />
+      <workItem from="1562077714704" duration="1859000" />
+      <workItem from="1562085013447" duration="581000" />
+      <workItem from="1562085663725" duration="950000" />
+      <workItem from="1562087539875" duration="15869000" />
+      <workItem from="1562163444991" duration="13135000" />
+      <workItem from="1562255012394" duration="2182000" />
+      <workItem from="1562333229443" duration="14492000" />
+      <workItem from="1562794023758" duration="608000" />
+      <workItem from="1562847141332" duration="19000" />
+      <workItem from="1562854090350" duration="5694000" />
+      <workItem from="1562933025057" duration="4264000" />
+      <workItem from="1563194546278" duration="246000" />
+      <workItem from="1563196406638" duration="336000" />
+      <workItem from="1563218718760" duration="1261000" />
+      <workItem from="1563275081532" duration="5479000" />
+      <workItem from="1563471866331" duration="991000" />
+      <workItem from="1563976412092" duration="19244000" />
+      <workItem from="1564061073696" duration="13904000" />
+      <workItem from="1564149805906" duration="817000" />
+      <workItem from="1564409768452" duration="20189000" />
+      <workItem from="1564492920015" duration="618000" />
+      <workItem from="1564579673383" duration="103083000" />
+      <workItem from="1565270386383" duration="7975000" />
+      <workItem from="1565359346982" duration="32629000" />
+      <workItem from="1565635838080" duration="31500000" />
+      <workItem from="1565885071297" duration="40106000" />
+      <workItem from="1566329887513" duration="26721000" />
+      <workItem from="1566495120721" duration="336000" />
+      <workItem from="1566495492122" duration="6121000" />
+      <workItem from="1566824513502" duration="682000" />
+      <workItem from="1566829860718" duration="86055000" />
+      <workItem from="1567196639736" duration="1414000" />
+      <workItem from="1567429093964" duration="4169000" />
+      <workItem from="1567445686532" duration="371000" />
+      <workItem from="1567446110301" duration="137047000" />
+      <workItem from="1568136490679" duration="4463000" />
+      <workItem from="1568207619808" duration="44012000" />
+      <workItem from="1568642142320" duration="711000" />
+      <workItem from="1568644061166" duration="6097000" />
+      <workItem from="1568730940593" duration="13142000" />
+      <workItem from="1569242760744" duration="1895000" />
+      <workItem from="1569328379813" duration="595000" />
+      <workItem from="1569412787557" duration="877000" />
+      <workItem from="1569434609391" duration="1361000" />
+      <workItem from="1569502214191" duration="663000" />
+      <workItem from="1569503270397" duration="596000" />
+      <workItem from="1569516408961" duration="6441000" />
+      <workItem from="1570111414411" duration="597000" />
+      <workItem from="1570454955058" duration="8005000" />
+      <workItem from="1570713044611" duration="1548000" />
+      <workItem from="1570715877308" duration="3294000" />
+      <workItem from="1571077799454" duration="265000" />
+      <workItem from="1571080326155" duration="378000" />
+      <workItem from="1571082031220" duration="11515000" />
+      <workItem from="1571666543662" duration="12364000" />
+      <workItem from="1572270961122" duration="769000" />
+      <workItem from="1572282454613" duration="940000" />
+      <workItem from="1572458444664" duration="609000" />
+      <workItem from="1572461930515" duration="1282000" />
+      <workItem from="1572527886378" duration="608000" />
+      <workItem from="1572875530387" duration="2481000" />
+      <workItem from="1572970746081" duration="6833000" />
+      <workItem from="1572983130482" duration="20118000" />
+      <workItem from="1573494913524" duration="7244000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix docker">
+      <created>1559667693518</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559667693518</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update MD">
+      <created>1562073760329</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562073760329</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test_Service_Events_Telegram____LIST____should_return_error_when_getEvents - 2019.09.10 at 14h 32m 48s.xml">
+      <configuration name="Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return error when getEvents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_Service_Events_Telegram____LIST____should_return_error_when_getEvents - 2019.09.10 at 14h 33m 52s.xml">
+      <configuration name="Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return error when getEvents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_Service_Events_Telegram - 2019.09.10 at 14h 34m 15s.xml">
+      <configuration name="Test Service Events Telegram" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_Service_Events_Telegram____LIST____should_return_ApplicationResponse_error_when_getEvents - 2019.09.10 at 14h 53m 42s.xml">
+      <configuration name="Test Service Events Telegram.&gt;&gt; LIST &lt;&lt;.should return ApplicationResponse error when getEvents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_Service_Events_Telegram - 2019.09.10 at 14h 53m 59s.xml">
+      <configuration name="Test Service Events Telegram" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.10.21 at 14h 04m 22s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_Strategy_Service____CREATE____mock_sucess_#MOCK_should_create_Strategy - 2019.10.21 at 14h 05m 18s.xml">
+      <configuration name="Test Strategy Service.&gt;&gt; CREATE &lt;&lt;.mock sucess.#MOCK should create Strategy" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.10.21 at 14h 06m 10s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.10.21 at 19h 03m 28s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.10.22 at 17h 29m 49s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="978220000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" x="528" y="71" width="330" height="625" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967384" weight="0.34725276" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36153847" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="GraphQL" order="8" weight="0.32967034" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3989011" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27142859" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50032616" side_tool="true" weight="0.30769232" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.34505495" />
+      <window_info anchor="bottom" id="SonarQube" order="13" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32977098" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.43230277" />
+      <window_info anchor="right" id="PlantUML" order="6" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" x="528" y="71" width="330" height="625" id="Project" order="0" visible="true" weight="0.20864068" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49967384" weight="0.34725276" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36153847" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="GraphQL" order="8" weight="0.32967034" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3989011" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1901099" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50032616" side_tool="true" weight="0.30769232" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.6857143" />
+      <window_info anchor="bottom" id="SonarQube" order="13" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32977098" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.43230277" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix docker" />
+    <MESSAGE value="update MD" />
+    <option name="LAST_COMMIT_MESSAGE" value="update MD" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Service_Exchange____LIST___.info" NAME="Test Service Exchange.&gt;&gt; LIST &lt;&lt; Coverage Results" MODIFIED="1562156114910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$_Test_Instance_Service.info" NAME="#Test Instance Service Coverage Results" MODIFIED="1561989069200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Service_Order.info" NAME="Test Service Order Coverage Results" MODIFIED="1566233131834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Strategy_Service_list.info" NAME="Test Strategy Service.list Coverage Results" MODIFIED="1562069104501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Strategy_Service__1_.info" NAME="Test Strategy Service (1) Coverage Results" MODIFIED="1562071762719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Strategy_Service_delete.info" NAME="Test Strategy Service.delete Coverage Results" MODIFIED="1562070635547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Service_Order____LIST______MOCK_should_get_dashboard.info" NAME="Test Service Order.&gt;&gt; LIST &lt;&lt; .#MOCK should get dashboard Coverage Results" MODIFIED="1562153119776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Strategy_Service____CREATE____mock_sucess.info" NAME="Test Strategy Service.&gt;&gt; CREATE &lt;&lt;.mock sucess Coverage Results" MODIFIED="1562152334798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Service_Liquidate.info" NAME="Test Service Liquidate Coverage Results" MODIFIED="1567717828545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Strategy_Service_get.info" NAME="Test Strategy Service.get Coverage Results" MODIFIED="1562069396207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Service_Events_Telegram.info" NAME="Test Service Events Telegram Coverage Results" MODIFIED="1568138039911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$Test_Service_Exchange.info" NAME="Test Service Exchange Coverage Results" MODIFIED="1562158350591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/InvestmentMonitorBackend$All_Tests.info" NAME="All Tests Coverage Results" MODIFIED="1564594533838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/commons/models/exchange/ExchangeAlias.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/db/db-topic-persistent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/bot-garch/models/Order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/db/__mocks__/db.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/db/db.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/class-validator/validation/ValidationTypeOptions.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/class-validator/decorator/ValidationOptions.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/class-validator/decorator/decorators.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="163" column="84" lean-forward="true" selection-start-line="163" selection-start-column="84" selection-end-line="163" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/helpers/populate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/models/exchange/Exchange.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/helpers/handleValitateError.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/routes/topic.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/middlewares/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/middlewares/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/elasticsearch/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="1628" column="4" selection-start-line="1628" selection-start-column="4" selection-end-line="1628" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1006">
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/lodash/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/lodash/common/collection.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="1246" column="28" selection-start-line="1246" selection-start-column="28" selection-end-line="1246" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/lodash/ts3.1/common/common.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="235" column="9" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/controllers/exchange.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/routes/exchange.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="3187" column="22" selection-start-line="3187" selection-start-column="22" selection-end-line="3187" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/routes/csv-order.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/models/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/kafka/kafka-consumer-bot-events-queue.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/routes/user.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/controllers/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/services/service.exchange.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#410#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/controllers/csv-order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="55" column="46" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/services/service.csv-order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/kafka/kafka-consumer-crypto-data.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/kafka/kafka-client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/services/service.account.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/services/service.user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/controllers/account.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/evo-manager/models/csv-order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../InvestmentMonitorFrontend/src/app/bot-garch/dashboard-garch/dashboard-garch.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/aws-sdk/clients/secretsmanager.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-835">
+          <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/models/ApplicationResponse.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/routes/secret-keys.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/controllers/secret-keys.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/services/service.secret-keys.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/exchange-manager/lib/SecretManagerService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/commons/services/service.exchange-alias.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
