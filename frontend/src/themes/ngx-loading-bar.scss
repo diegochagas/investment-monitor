@@ -1,0 +1,9 @@
+#loading-bar-spinner {
+  display: none !important;
+}
+
+.loading-bar-fixed {
+  .bar {
+    background: var(--colorDefault) !important;
+  }
+}

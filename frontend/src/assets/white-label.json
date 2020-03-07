@@ -1,0 +1,146 @@
+{
+  "backoffice": {
+    "logoUrl": "",
+
+    "colorBlue": "#0AB3B9",
+    "colorBlueHover": "#1E7477",
+
+    "colorGray": "#AFB5C0",
+    "colorGrayHover": "#878A8F",
+
+    "colorDefault": "#2EE74A",
+    "colorDefaultHover": "#209732",
+
+    "colorGreen": "#2EE74A",
+    "colorGreenHover": "#209732",
+
+    "colorRed": "#AA2020",
+    "colorRedHover": "#7A2020",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#0C0C0C",
+
+    "colorWhite": "#FFFFFF",
+    "colorWhiteHover": "#F2F2F2"
+  },
+  "bot-garch": {
+    "logoUrl": "",
+
+    "colorBlue": "#0AB3B9",
+    "colorBlueHover": "#1E7477",
+
+    "colorGray": "#AFB5C0",
+    "colorGrayHover": "#878A8F",
+
+    "colorDefault": "#303030",
+    "colorDefaultHover": "#555555",
+
+    "colorGreen": "#2EE74A",
+    "colorGreenHover": "#209732",
+
+    "colorRed": "#AA2020",
+    "colorRedHover": "#7A2020",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#0C0C0C",
+
+    "colorWhite": "#FFFFFF",
+    "colorWhiteHover": "#F2F2F2"
+  },
+  "bot-market": {
+    "logoUrl": "",
+
+    "colorBlue": "#0AB3B9",
+    "colorBlueHover": "#1E7477",
+
+    "colorGray": "#AFB5C0",
+    "colorGrayHover": "#878A8F",
+
+    "colorDefault": "#C4222F",
+    "colorDefaultHover": "#8E1921",
+
+    "colorGreen": "#089312",
+    "colorGreenHover": "#066B0D",
+
+    "colorRed": "#AA2020",
+    "colorRedHover": "#7A2020",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#0C0C0C",
+
+    "colorWhite": "#FFFFFF",
+    "colorWhiteHover": "#F2F2F2"
+  },
+  "bot-telegram": {
+    "logoUrl": "",
+
+    "colorBlue": "#0AB3B9",
+    "colorBlueHover": "#1E7477",
+
+    "colorGray": "#AFB5C0",
+    "colorGrayHover": "#878A8F",
+
+    "colorDefault": "#59298D",
+    "colorDefaultHover": "#3F1D66",
+
+    "colorGreen": "#2EE74A",
+    "colorGreenHover": "#209732",
+
+    "colorRed": "#AA2020",
+    "colorRedHover": "#7A2020",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#0C0C0C",
+
+    "colorWhite": "#FFFFFF",
+    "colorWhiteHover": "#F2F2F2"
+  },
+  "bot-coins": {
+    "logoUrl": "",
+
+    "colorBlue": "#0AB3B9",
+    "colorBlueHover": "#1E7477",
+
+    "colorGray": "#AFB5C0",
+    "colorGrayHover": "#878A8F",
+
+    "colorDefault": "#0DC9F7",
+    "colorDefaultHover": "#0E85A0",
+
+    "colorGreen": "#2EE74A",
+    "colorGreenHover": "#209732",
+
+    "colorRed": "#AA2020",
+    "colorRedHover": "#7A2020",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#0C0C0C",
+
+    "colorWhite": "#FFFFFF",
+    "colorWhiteHover": "#F2F2F2"
+  },
+  "general-system": {
+    "logoUrl": "",
+
+    "colorBlue": "#0AB3B9",
+    "colorBlueHover": "#1E7477",
+
+    "colorGray": "#AFB5C0",
+    "colorGrayHover": "#878A8F",
+
+    "colorDefault": "#C73A62",
+    "colorDefaultHover": "#932C49",
+
+    "colorGreen": "#2EE74A",
+    "colorGreenHover": "#209732",
+
+    "colorRed": "#AA2020",
+    "colorRedHover": "#7A2020",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#0C0C0C",
+
+    "colorWhite": "#FFFFFF",
+    "colorWhiteHover": "#F2F2F2"
+  }
+}

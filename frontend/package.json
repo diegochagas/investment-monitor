@@ -4,9 +4,8 @@
   "scripts": {
     "ng": "ng",
     "config": "ts-node set-env.ts",
-    "start": "ng serve",
-    "build": "ng build",
-    "deploy": "ng build --prod --base-href https://diegochagas.com/investment-monitor/ && ngh --dir=dist/investment-monitor"
+    "start": "ng serve --open",
+    "build": "ng build"
   },
   "private": true,
   "dependencies": {

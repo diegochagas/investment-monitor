@@ -1,0 +1,59 @@
+<div id="menu">
+  <div class="logo">
+    <img class="icon" [src]="'/assets/logos/'+ type +'-icon.svg'">
+
+    <img class="text" [src]="'/assets/logos/'+ type +'-text.svg'">
+
+    <div class="projects">
+      <ng-container *ngFor="let project of projects">
+        <a [routerLink]="project" *ngIf="project != '/' + type">
+          <img src="/assets/logos/{{ project | replace: ['/'] : '-color.svg' }}">
+        </a>
+      </ng-container>
+    </div>
+  </div>
+
+  <ng-container *ngIf="type == 'general-system'">
+    <a [routerLink]="['/general-system/dashboard']" routerLinkActive="active" class="icn-dashboard">
+      <span>Dasboard</span>
+    </a>
+
+    <a [routerLink]="['/general-system/exchange']" routerLinkActive="active" class="icn-exchange">
+      <span>Exchange</span>
+    </a>
+
+    <a [routerLink]="['/general-system/groups']" routerLinkActive="active" class="icn-groups">
+      <span>Groups</span>
+    </a>
+
+    <a [routerLink]="['/general-system/profiles']" routerLinkActive="active" class="icn-profiles">
+      <span>Profiles</span>
+    </a>
+
+    <a [routerLink]="['/general-system/subscribers']" routerLinkActive="active" class="icn-subscribe">
+      <span>Subscribers</span>
+    </a>
+
+    <a [routerLink]="['/general-system/users']" routerLinkActive="active" class="icn-users">
+      <span>Users</span>
+    </a>
+  </ng-container>
+
+  <ng-container *ngIf="type != 'general-system'">
+    <a [routerLink]="['/'+ type +'/dashboard']" routerLinkActive="active" class="icn-dashboard">
+      <span>Dasboard</span>
+    </a>
+
+    <a [routerLink]="['/'+ type +'/strategies']" routerLinkActive="active" class="icn-strategies">
+      <span>Strategies</span>
+    </a>
+
+    <a [routerLink]="['/'+ type +'/robots']" routerLinkActive="active" class="icn-robots">
+      <span>Robots</span>
+    </a>
+  </ng-container>
+
+  <a href="javascript: void(0);" class="logout icn-logout" (click)="logout();">
+    <span>Logout</span>
+  </a>
+</div>

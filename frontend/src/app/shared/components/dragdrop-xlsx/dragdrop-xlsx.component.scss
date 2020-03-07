@@ -1,0 +1,91 @@
+@import '../../../../themes/styles-default';
+
+@import '../../../../themes/white-label';
+
+#dragdrop-xlsx {
+  .dragdrop {
+    padding: 30px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    h1 {
+      display: block;
+      text-align: center;
+      font-family: $montserratLight;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    @include border-radius(5px);
+  }
+
+  .table {
+    max-height: calc(100vh - 500px);
+    overflow: auto;
+    background-color: var(--colorWhite);
+
+    * {
+      outline: none;
+    }
+
+    table {
+      width: 100%;
+
+      th, td {
+        text-transform: uppercase;
+      }
+
+      .mat-row {
+        &:hover {
+          background-color: var(--colorDefault);
+
+          * {
+            color: var(--colorWhite);
+          }
+        }
+      }
+
+      button {
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        top: 4px;
+        position: relative;
+
+        &:before {
+          font-size: 25px;
+        }
+
+        &.button {
+          padding-left: 7px;
+          padding-right: 7px;
+          color: #FFF;
+          font-family: $montserratLight;
+          font-size: 12px;
+          background-color: var(--colorBlue);
+
+          &:hover {
+            background-color: var(--colorBlueHover);
+          }
+        }
+
+        &.delete {
+          color: var(--colorGray);
+          background-color: transparent;
+
+          &:hover {
+            color: var(--colorGrayHover);
+          }
+        }
+      }
+    }
+  }
+
+  .button-example {
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+    border: none;
+    float: right;
+    margin-bottom: 15px;
+  }
+}

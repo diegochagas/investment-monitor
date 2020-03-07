@@ -1,0 +1,25 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "./themes/white-label";
+@import "./themes/angular-highcharts";
+@import "./themes/angular-material";
+@import "./themes/ngx-loading-bar";
+@import "./themes/sweet-alert";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  background-color: var(--bodyBackgroundColor);
+
+  .blank-space {
+    height: 30px;
+  }
+}
+
+body {
+  overflow: hidden;
+}

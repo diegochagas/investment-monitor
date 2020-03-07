@@ -1,0 +1,22 @@
+<svg width="490" height="125" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="492" height="127" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text fill="#59298d" stroke="#000" stroke-width="0" x="148.5" y="65.4375" id="svg_1" font-size="81" font-family="Euphoria, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">BOT</text>
+  <text fill="#7f7f7f" stroke="#000" stroke-width="0" x="151.5" y="117.4375" id="svg_2" font-size="60" font-family="Euphoria, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">TELEGRAM</text>
+  <g stroke="null" id="svg_10">
+   <path stroke="null" id="svg_7" fill="#59298d" d="m87.905882,57.74633a3.57931,3.57931 0 0 0 -0.652254,-1.94059c-0.60913,-0.867875 -1.84356,-1.832779 -4.199221,-1.832779c0,0 -1.406928,0 -1.617158,-1.746531a0.738502,0.738502 0 0 1 0.253355,-0.641473l36.941283,-30.494212l-65.764432,25.335478l-48.514745,0l36.655585,27.491689s7.546738,-8.085791 18.866845,-7.007685c0,0 -1.078105,9.163896 10.242002,12.398213l4.18844,3.724854a6.414727,6.414727 0 0 1 1.142792,1.33146l4.371718,6.802845l16.171582,0l-4.355546,-12.204154a35.345687,35.345687 0 0 1 -1.574034,-6.032c-0.743893,-4.355546 -1.994495,-12.031657 -2.156211,-15.185115zm-3.773369,8.085791l-5.92958,-2.695264a15.276754,15.276754 0 0 0 0.539053,-6.468633s6.468633,2.695264 5.390527,9.163896z"/>
+   <g stroke="null" transform="matrix(0.5390527182902544,0,0,0.5390527182902544,-4230.163176109723,-974.1492987324755) " id="svg_8" fill="#ccc">
+    <path stroke="null" id="svg_9" d="m8043.476159,2032.275949l-72,-52l-72,53l22.91,-71.48a30.21,30.21 0 0 1 29.09,-21.52s6,13 17,19c0,0 11,6 14,16l10,10l36,0l15,47zm-31,-130l10,-9l71,0l-70,49s-5,-21 -5,-32s0,-2 -6,-8m-41,-91l-23,72l43,-17l-20,-55"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,251 @@
+@import '../../../../themes/styles-default';
+
+@import '../../../../themes/white-label';
+
+#view-strategy {
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+
+  .content {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    left: 50%;
+    font-family: $robotoBold;
+    background-color: var(--colorWhite);
+    text-align: center;
+    padding: 45px 15px;
+    border: 2px solid var(--colorGray);
+    @include translate(-50%, 0);
+    @include border-radius(5px);
+
+    .ask {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      font-size: 14px;
+    }
+
+    .bid {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      font-size: 14px;
+    }
+
+    .stop-loss {
+      position: absolute;
+      right: 0px;
+      bottom: -25px;
+      font-family: $montserratRegular;
+      font-size: 12px;
+      color: var(--colorRed);
+    }
+
+    .wallet {
+      position: absolute;
+      left: 0px;
+      bottom: -25px;
+      font-family: $montserratRegular;
+      font-size: 12px;
+      color: var(--colorBlue);
+    }
+
+    .price {
+      position: relative;
+      padding: 5px;
+
+      span {
+        display: inline-block;
+        font-size: 20px;
+        color: var(--colorDefaultHover);
+        background-color: var(--colorWhite);
+        padding: 0 5px;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 65%;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        background-color: var(--colorDefaultHover);
+        @include translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+
+    .max-orders {
+      position: relative;
+      border: 1px solid var(--colorGray);
+
+      .left,
+      .right {
+        position: absolute;
+        font-family: $montserratRegular;
+        font-size: 11px;
+        padding: 3px;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        padding: 0;
+        text-align: center;
+        @include transform-origin(center center);
+      }
+
+      .left {
+        left: -50px;
+        @include translate-rotate(0,-50%,-90deg);
+      }
+
+      .right {
+        right: -50px;
+        @include translate-rotate(0,-50%,90deg);
+      }
+    }
+
+    .order-exec {
+      position: relative;
+      display: block;
+      padding: 10px;
+      border: 1px solid var(--colorGray);
+      margin: 10px 35px;
+
+      span {
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        background-color: var(--colorWhite);
+        padding: 0 5px;
+        line-height: 20px;
+        @include translate(-50%, 0);
+      }
+
+      &.ask_ord {
+        span {
+          top: -11px;
+        }
+
+        .fraction-order {
+          padding: 15px 0 5px 0;
+          margin: 15px 0 0 0;
+
+          &:before {
+            top: -4px;
+          }
+        }
+      }
+
+      &.bid_ord {
+        span {
+          bottom: -11px;
+        }
+
+        .fraction-order {
+          padding: 5px 0 15px 0;
+          margin: 0 0 15px 0;
+
+          &:before {
+            bottom: -4px;
+          }
+        }
+      }
+
+      &.first {
+        max-width: 75%;
+        margin: 10px auto;
+      }
+    }
+
+    .max-spread_left,
+    .max-spread_right {
+      position: absolute;
+      width: 30px;
+      height: 110px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid var(--colorBlue);
+      color: var(--colorRed);
+      top: 50%;
+      @include translate(0,-50%);
+
+      span,
+      .value {
+        position: absolute;
+        font-family: $montserratRegular;
+        font-size: 11px;
+        padding: 3px;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        padding: 0;
+        text-align: center;
+        @include transform-origin(center center);
+      }
+
+      .value {
+        font-family: $montserratRegular;
+        font-size: 12px;
+      }
+
+      &.max-spread_left {
+        left: 6.5%;
+        border-right: none;
+
+        span,
+        .value {
+          left: -50px;
+          @include translate-rotate(0,-50%,-90deg);
+        }
+
+        .value {
+          left: -30px;
+        }
+      }
+
+      &.max-spread_right {
+        right: 6.5%;
+        border-left: none;
+
+        span,
+        .value {
+          right: -50px;
+          @include translate-rotate(0,-50%,90deg);
+        }
+
+        .value {
+          right: -30px;
+        }
+      }
+    }
+
+    .fraction-order {
+      position: relative;
+      border: 1px solid var(--colorRed);
+
+      &:before {
+        content: 'Fraction Orders';
+        position: absolute;
+        display: inline-block;
+        background-color: var(--colorWhite);
+        font-family: $montserratRegular;
+        font-size: 11px;
+        color: var(--colorRed);
+        padding: 0 5px;
+        left: 50%;
+        @include translate(-50%,0);
+      }
+
+      small {
+        display: block;
+        color: var(--colorRed);
+      }
+    }
+  }
+}

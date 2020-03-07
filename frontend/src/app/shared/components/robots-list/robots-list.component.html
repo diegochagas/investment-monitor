@@ -1,0 +1,19 @@
+<div id="robots-list">
+  <fieldset>
+    <span>Search robot</span>
+
+    <input type="text" (keyup)="searchRobot($event.target.value);" placeholder="Write robot name">
+  </fieldset>
+
+  <div class="list">
+    <div class="row">
+      <div class="col-2" *ngFor="let robot of filteredList;">
+        <button type="button" mat-button (click)="robotTrigger(robot.instanceId);">
+          <span class="icn-robots"></span>
+
+          <span>{{ robot.instanceId }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

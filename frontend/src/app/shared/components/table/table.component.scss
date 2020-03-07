@@ -1,0 +1,152 @@
+@import "../../../../themes/styles-default";
+
+@import "../../../../themes/white-label";
+
+#table {
+  .tab-header {
+    background-color: var(--colorWhite);
+  }
+
+  .area-table {
+    max-height: 450px;
+    overflow: auto;
+    background-color: var(--colorWhite);
+
+    * {
+      outline: none;
+    }
+
+    table {
+      width: 100%;
+
+      &.no-result {
+        .header {
+          height: 0 !important;
+        }
+
+        &.has-tabs {
+          .header {
+            height: 30px !important;
+          }
+        }
+      }
+
+      th, td {
+        text-transform: uppercase;
+      }
+
+      tr {
+        &:hover {
+          background-color: var(--colorDefault);
+
+          * {
+            color: var(--colorWhite);
+          }
+        }
+      }
+
+      button {
+        border: none;
+        padding: 0;
+        cursor: pointer;
+
+        &:before {
+          font-size: 25px;
+        }
+
+        &.button {
+          padding-left: 7px;
+          padding-right: 7px;
+          color: #FFF;
+          font-family: $montserratLight;
+          font-size: 12px;
+          background-color: var(--colorBlue);
+
+          &:hover {
+            background-color: var(--colorBlueHover);
+          }
+
+          &.off {
+            background-color: var(--colorRed);
+
+            &:hover {
+              background-color: var(--colorRedHover);
+            }
+          }
+
+          &.on {
+            background-color: var(--colorDefault);
+
+            &:hover {
+              background-color: var(--colorDefaultHover);
+            }
+          }
+        }
+
+        &.editdelete {
+          height: 25px;
+          color: var(--colorGray);
+          background-color: transparent;
+
+          &:hover {
+            color: var(--colorGrayHover);
+          }
+        }
+
+        &.delete {
+          height: 25px;
+          color: var(--colorGray);
+          background-color: transparent;
+
+          &:hover {
+            color: var(--colorGrayHover);
+          }
+        }
+      }
+
+      button + button {
+        margin-left: 5px;
+      }
+
+      mat-form-field {
+        width: 100%;
+        background-color: var(--colorWhiteHover);
+        height: 35px;
+        line-height: 35px;
+        padding: 0 10px;
+        @include border-radius(5px);
+
+        ::ng-deep .mat-form-field-infix {
+          padding: 0;
+          border-top: 0;
+        }
+
+        ::ng-deep .mat-form-field-label {
+          padding: 16px;
+          font-family: $robotoRegular;
+          font-size: 13px;
+          color: var(--colorBlack);
+          top: -7px;
+          left: -16px;
+        }
+
+        ::ng-deep .mat-form-field-underline {
+          display: none !important;
+        }
+
+        ::ng-deep .mat-form-field-wrapper {
+          padding-bottom: 0;
+        }
+      }
+
+      .color-gain {
+        color: var(--colorGreenHover);
+      }
+
+      .color-loss {
+        color: var(--colorRed);
+      }
+    }
+  }
+}
+

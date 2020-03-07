@@ -1,0 +1,56 @@
+<div id="view-profits">
+  <div class="row">
+    <div class="col">
+      <app-input-date [title]="'Date range'" [selectedDate]="selectedDate" (selected)="setDate($event)"></app-input-date>
+    </div>
+
+    <div class="col">
+      <fieldset>
+        <span>Main currency</span>
+
+        <mat-form-field [floatLabel]="'never'">
+          <mat-select [(value)]="profitsData.mainCurrency" (selectionChange)="sendData()" [placeholder]="'Select main currency'">
+            <mat-option [value]="currency" *ngFor="let currency of currencies;">{{ currency }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </fieldset>
+    </div>
+  </div>
+
+  <h4>Profits</h4>
+  <div class="content">
+    <div class="detail-profits">
+      <div [ngClass]="{ 'color-gain':profits.returns > 0, 'color-loss':profits.returns < 0 }">
+        <i class="material-icons">{{ profits.returns > 0 ? 'trending_up' : (profits.returns < 0 ? 'trending_down': 'trending_flat') }}</i>
+      </div>
+
+      <div class="details-description">
+        <p class="invested-details">{{ profits.mainCurrency }} Invested</p>
+
+        <p class="invested-value">{{ profits.invested | number:'.8-8' }}</p>
+
+        <p class="invested-details">Total {{ profits.mainCurrency }} returns:</p>
+
+        <p [ngClass]="{ 'total-returns': true, 'color-gain':profits.returns > 0, 'color-loss':profits.returns < 0 }">
+          {{ profits.returns | number:'.8-8' }} ({{ profits.returnsPercentage | number:'.2-2' }}%)
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="detail-total">
+      <div class="">
+        <i class="material-icons wallet">account_balance_wallet</i>
+      </div>
+
+      <div class="details-description">
+        <p class="invested-details">
+          Total <span class="main-currency">{{ profits.mainCurrency }}</span> in assets on exchange:
+        </p>
+
+        <p [ngClass]="{ 'total-returns': true, 'color-gain':profits.total > profits.invested, 'color-loss':profits.total < profits.invested }">
+          {{ profits.total | number:'.8-8' }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

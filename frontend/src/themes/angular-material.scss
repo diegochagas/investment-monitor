@@ -1,0 +1,69 @@
+@import "./styles-default";
+
+@import './white-label';
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-green);
+$my-app-accent: mat-palette($mat-green, 500, 900, A100);
+$my-app-warn: mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+
+.mat-spinner {
+  width: 28px !important;
+  height: 28px !important;
+
+  svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+.area-table {
+  box-shadow: none !important;
+
+  .mat-table {
+    font-family: $montserratRegular !important;
+
+    .mat-header-row {
+      background-color: var(--colorWhiteHover) !important;
+      height: 30px !important;
+    }
+
+    .mat-header-cell {
+      font-family: $montserratBold !important;
+      border-bottom: 1px solid var(--colorDefault) !important;
+      color: var(--colorGray) !important;
+      font-size: 12px !important;
+    }
+
+    .mat-cell {
+      font-size: 12px !important;
+    }
+  }
+}
+
+.mat-card {
+  background-color: var(--colorWhite) !important;
+  margin-bottom: 15px !important;
+}
+
+.mat-figure {
+  padding: 10px 10px 0px 10px !important;
+}
+
+.mat-slider {
+  padding: 0 !important;
+
+  .mat-slider-wrapper {
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+.cdk-global-scrollblock {
+  overflow: hidden !important;
+}

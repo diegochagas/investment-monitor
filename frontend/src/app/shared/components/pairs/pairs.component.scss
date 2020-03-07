@@ -1,0 +1,126 @@
+@import '../../../../themes/styles-default';
+
+@import '../../../../themes/white-label';
+
+#pairs {
+  .pos-r {
+    position: relative;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+
+    mat-form-field {
+      width: 100%;
+
+      ::ng-deep .mat-form-field-infix {
+        padding: 0;
+        border-top: 0;
+      }
+
+      ::ng-deep .mat-form-field-label {
+        padding: 16px;
+        font-family: $robotoRegular;
+        font-size: 13px;
+        color: var(--colorGrayHover);
+      }
+
+      ::ng-deep .mat-form-field-underline {
+        display: none !important;
+      }
+
+      ::ng-deep .mat-form-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+
+    span {
+      display: block;
+      margin: 5px 0;
+      font-family: $robotoRegular;
+      font-size: 14px;
+      color: var(--colorGray);
+    }
+
+    input, select {
+      width: 100%;
+      background-color: var(--colorWhite);
+      border: 2px solid var(--colorGray);
+      padding: 16px;
+      color: var(--colorBlack);
+      box-sizing: border-box;
+      font-family: $robotoRegular;
+      line-height: normal;
+      outline: none;
+      @include border-radius(5px);
+
+      &:hover, &:focus {
+        border-color: var(--colorBlue);
+      }
+
+      &[type='number'] {
+        height: 51px;
+      }
+    }
+
+    mat-select {
+      display: block;
+      width: 100%;
+      background-color: var(--colorWhite);
+      border: 2px solid var(--colorGray);
+      padding: 16px;
+      color: var(--colorBlack);
+      box-sizing: border-box;
+      font-family: $robotoRegular;
+      @include border-radius(5px);
+
+      &:hover, &:focus {
+        border-color: var(--colorBlue);
+      }
+    }
+
+    &.rtl {
+      text-align: right;
+    }
+  }
+
+  button {
+    display: block;
+    width: calc(100% - 6px);
+    background-color: var(--colorBlue);
+    font-family: $robotoRegular;
+    font-size: 14px;
+    color: var(--colorWhite);
+    margin: 5px auto;
+
+    &:disabled {
+      background-color: var(--colorGray);
+    }
+  }
+
+  .pair {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: $montserratRegular;
+    color: var(--colorGray);
+    border: 1px solid var(--colorGray);
+    height: 18px;
+    @include border-radius(5px);
+
+    .del {
+      display: inline-block;
+      vertical-align: top;
+      font-style: normal;
+      font-size: 18px;
+      color: var(--colorGray);
+      cursor: pointer;
+    }
+  }
+
+  .pair + .pair {
+    margin-left: 5px;
+  }
+}

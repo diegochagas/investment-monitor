@@ -1,0 +1,301 @@
+@import '../../themes/styles-default';
+
+@import '../../themes/white-label';
+
+#login {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  * {
+    outline: none;
+  }
+
+  .ctr {
+    text-align: center;
+  }
+
+  .enter {
+    position: absolute;
+    top: -68px;
+    left: 0;
+    width: 100%;
+    background-color: var(--colorDefault);
+    text-align: center;
+    color: var(--colorWhite);
+    font-family: $montserratBold;
+    font-size: 24px;
+    line-height: 22px;
+    border: 0;
+    padding: 20px 0;
+
+    &:before {
+      color: var(--colorBlue);
+      margin-right: 10px;
+    }
+  }
+
+  .left {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      max-width: 300px;
+      @include translate(-50%, -50%);
+
+      h1 {
+        display: block;
+        text-align: center;
+        font-family: $montserratBold;
+        font-size: 32px;
+        color: var(--colorBlue);
+      }
+
+      form {
+        display: block;
+        height: 310px;
+        overflow: hidden;
+        @include transitionHeight(0.5s);
+
+        fieldset {
+          position: relative;
+          display: block;
+          padding: 0 0 30px 0;
+          border: none;
+
+          span {
+            display: block;
+            font-family: $robotoRegular;
+            font-size: 12px;
+            color: var(--colorGrayHover);
+            margin-bottom: 4px;
+          }
+
+          input {
+            width: 100%;
+            padding: 15px 60px;
+            border: 1px solid var(--colorGrayHover);
+            box-sizing: border-box;
+            font-family: $robotoRegular;
+            font-size: 16px;
+            color: var(--colorGrayHover);
+            background-color: var(--colorWhite);
+            margin: 1px;
+            @include border-radius(8px);
+          }
+
+          .icon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 35px;
+            left: 15px;
+            font-size: 25px;
+            color: var(--colorGrayHover);
+          }
+
+          button {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 35px;
+            right: 15px;
+            font-size: 25px;
+            color: var(--colorGrayHover);
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+          }
+
+          .error {
+            position: absolute;
+            left: 0;
+            bottom: 9px;
+            font-family: $robotoRegular;
+            font-size: 12px;
+            color: var(--colorRed);
+          }
+
+          &:hover,
+          &.focus {
+            span {
+              color: var(--colorBlue);
+            }
+
+            input {
+              border-color: var(--colorBlue);
+            }
+
+            .icon,
+            button {
+              color: var(--colorDefault);
+            }
+          }
+
+          &.error {
+            span {
+              color: var(--colorRed);
+            }
+
+            input {
+              border-color: var(--colorRed);
+            }
+
+            .icon,
+            button {
+              color: var(--colorRed);
+            }
+          }
+        }
+
+        &.close {
+          height: 0px;
+        }
+
+        &.open {
+          height: 310px;
+        }
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+      font-family: $robotoRegular;
+      font-size: 12px;
+      text-align: center;
+      color: var(--colorGray);
+      padding: 10px 0;
+    }
+
+    .submit {
+      display: block;
+      width: 80%;
+      background-color: var(--colorBlue);
+      text-align: center;
+      padding: 15px 30px;
+      font-family: $montserratBold;
+      font-size: 16px;
+      color: var(--colorWhite);
+      border: none;
+      cursor: pointer;
+      margin: 0 auto 30px auto;
+      @include border-radius(25px);
+
+      &:hover {
+        background-color: var(--colorBlueHover);
+      }
+
+      &:disabled {
+        background-color: var(--colorGray);
+        cursor: default;
+      }
+    }
+
+    .forgot {
+      display: inline-block;
+      font-family: $robotoRegular;
+      font-size: 14px;
+      color: var(--colorBlue);
+      text-decoration: none;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .button-google {
+      display: block;
+      width: 100%;
+      background-color: #4285F4;
+      padding: 2px;
+      cursor: pointer;
+      margin-top: 25px;
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 3px 3px rgba(66, 133, 244, 0.3);
+        -moz-box-shadow:    0px 0px 3px 3px rgba(66, 133, 244, 0.3);
+        box-shadow:         0px 0px 3px 3px rgba(66, 133, 244, 0.3);
+      }
+
+      .icon {
+        display: inline-block;
+        background-color: var(--colorWhite);
+        padding: 15px;
+        line-height: 12px;
+        vertical-align: middle;
+      }
+
+      span {
+        position: relative;
+        top: 2px;
+        width: calc(100% - 48px);
+        display: inline-block;
+        line-height: 12px;
+        font-family: $robotoRegular;
+        font-size: 16px;
+        color: #FFF;
+        text-align: center;
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    width: calc(100% - 550px);
+    background-image: url('/assets/bg-login.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+
+    img {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      @include translate(0, -50%);
+
+      h2 {
+        display: block;
+        margin: 0;
+        font-family: $montserratBold;
+        font-size: 36px;
+        color: var(--colorDefault);
+      }
+
+      h1 {
+        display: block;
+        margin: 0;
+        font-family: $montserratBold;
+        font-size: 140px;
+        line-height: 130px;
+        color: var(--colorWhiteHover);
+      }
+
+      .line {
+        display: block;
+        width: 120px;
+        height: 12px;
+        background-color: var(--colorDefault);
+        @include border-radius(25px);
+      }
+    }
+  }
+}

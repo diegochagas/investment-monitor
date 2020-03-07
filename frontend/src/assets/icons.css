@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "market-maker";
+  src:url("/assets/fonts/market-maker.eot");
+  src:url("/assets/fonts/market-maker.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/market-maker.woff") format("woff"),
+    url("/assets/fonts/market-maker.ttf") format("truetype"),
+    url("/assets/fonts/market-maker.svg#market-maker") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "market-maker" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icn-"]:before,
+[class*=" icn-"]:before {
+  font-family: "market-maker" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icn-dashboard:before {
+  content: "\61";
+}
+.icn-robots:before {
+  content: "\62";
+}
+.icn-strategies:before {
+  content: "\63";
+}
+.icn-exchange:before {
+  content: "\64";
+}
+.icn-edit:before {
+  content: "\65";
+}
+.icn-delete:before {
+  content: "\66";
+}
+.icn-close:before {
+  content: "\67";
+}
+.icn-visible:before {
+  content: "\68";
+}
+.icn-invisible:before {
+  content: "\69";
+}
+.icn-padlock:before {
+  content: "\6a";
+}
+.icn-letter:before {
+  content: "\6b";
+}
+.icn-logout:before {
+  content: "\6c";
+}
+.icn-users:before {
+  content: "\6d";
+}
+.icn-plus:before {
+  content: "\6e";
+}
+.icn-minus:before {
+  content: "\6f";
+}
+.icn-profiles:before {
+  content: "\70";
+}
+.icn-subscribe:before {
+  content: "\71";
+}
+.icn-groups:before {
+  content: "\72";
+}

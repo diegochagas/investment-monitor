@@ -1,0 +1,21 @@
+<svg width="340" height="125" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="342" height="127" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text fill="#ffffff" stroke="#000" stroke-width="0" x="139.5" y="65.4375" id="svg_1" font-size="81" font-family="Euphoria, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">BOT</text>
+  <text style="cursor: move;" fill="#ffffff" stroke="#000" stroke-width="0" x="141.5" y="117.4375" id="svg_2" font-size="60" font-family="Euphoria, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">COINS</text>
+  <g stroke="null" id="svg_13">
+   <polyline stroke="null" id="svg_10" points="71.44249725341797,87.71350860595703 94.91845703125,77.64080047607422 71.44249725341797,38.89340591430664 12.062307357788086,35.88780212402344 57.308292388916016,47.828853607177734 69.33051300048828,89.17565155029297 94.91845703125,77.64080047607422 " fill="#ffffff"/>
+   <polygon stroke="null" id="svg_11" points="17.58612632751465,110.86445617675781 119.77523803710938,32.719783782958984 128.62940979003906,52.134090423583984 117.01341247558594,48.9660758972168 116.60716247558594,69.11150360107422 " fill="#ffffff"/>
+   <polygon stroke="null" id="svg_12" points="108.56529998779297,72.52320861816406 78.83454132080078,22.159690856933594 3.3705902099609375,18.341827392578125 60.88241958618164,33.532127380371094 76.47895050048828,85.9263687133789 " fill="#ffffff"/>
+  </g>
+ </g>
+</svg>

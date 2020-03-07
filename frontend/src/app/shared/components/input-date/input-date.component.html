@@ -1,0 +1,9 @@
+<div id="input-date">
+  <fieldset>
+    <span>{{ title }}</span>
+
+    <mat-form-field [floatLabel]="'never'">
+      <input matInput type="text" ngxDaterangepickerMd [(ngModel)]="selectedDate" (ngModelChange)="dateSelected($event);" class="form-control" autocomplete="off" [locale]="{ applyLabel: 'Select', format: 'DD/MM/YYYY' }" placeholder="Select {{ title }}">
+    </mat-form-field>
+  </fieldset>
+</div>

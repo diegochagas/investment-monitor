@@ -1,0 +1,21 @@
+<div id="select-options">
+  <form [formGroup]="formGroupSelectOptions">
+    <fieldset>
+      <span>{{ title }}</span>
+
+      <mat-form-field [floatLabel]="'never'">
+        <ng-container *ngIf="multiple">
+          <mat-select multiple formControlName="val" [(value)]="formGroupSelectOptions.value.val" [placeholder]="'Select ' + title">
+            <mat-option *ngFor="let option of dataOptions" [value]="option">{{ option }}</mat-option>
+          </mat-select>
+        </ng-container>
+
+        <ng-container *ngIf="!multiple">
+          <mat-select formControlName="val" [(value)]="formGroupSelectOptions.value.val" [placeholder]="'Select ' + title">
+            <mat-option *ngFor="let option of dataOptions" [value]="option.value">{{ option.name }}</mat-option>
+          </mat-select>
+        </ng-container>
+      </mat-form-field>
+    </fieldset>
+  </form>
+</div>
