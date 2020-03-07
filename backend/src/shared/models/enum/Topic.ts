@@ -1,0 +1,9 @@
+export enum TopicConsumers {
+    BOT_EVENTS_MARKETMAKER = "BOT_EVENTS_MARKETMAKER",
+    BOT_EVENTS_GARCH = "BOT_EVENTS_GARCH",
+    BOT_EVENTS_TELEGRAM = "BOT_EVENTS_TELEGRAM"
+};
+
+export enum TopicProducers {
+    BOT_MANAGER = 'BOT_MANAGER'
+}

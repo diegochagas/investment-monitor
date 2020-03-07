@@ -1,0 +1,1 @@
+{"version":3,"file":"IMarketBasePrice.js","sourceRoot":"","sources":["../../../../../../src/app/market-maker/models/interfaces/IMarketBasePrice.ts"],"names":[],"mappings":";;AAAA;IAAA;QACI,WAAM,GAAY,SAAS,CAAC;QAC5B,YAAO,GAAY,SAAS,CAAC;QAC7B,uBAAkB,GAAY,SAAS,CAAC;QACxC,wBAAmB,GAAY,SAAS,CAAC;QACzC,qBAAgB,GAAY,SAAS,CAAC;IAC1C,CAAC;IAAD,uBAAC;AAAD,CAAC,AAND,IAMC;AANY,4CAAgB"}
