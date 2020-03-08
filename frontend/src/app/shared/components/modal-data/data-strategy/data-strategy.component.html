@@ -1,0 +1,13 @@
+<div id="data-strategy">
+  <form [formGroup]="strategyForm" *ngIf="strategies.length > 0 && !spinner">
+    <mat-form-field>
+      <mat-select formControlName="strategy">
+        <mat-option value="">Select Strategy</mat-option>
+
+        <mat-option *ngFor="let item of strategies;" [value]="item.presentationName" (onSelectionChange)="changeStrategy($event)">{{ item.presentationName | lowercase }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+
+  <mat-spinner *ngIf="spinner"></mat-spinner>
+</div>

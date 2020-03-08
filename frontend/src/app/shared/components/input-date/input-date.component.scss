@@ -1,0 +1,67 @@
+@import "../../../../themes/styles-default";
+
+@import "../../../../themes/white-label";
+
+#input-date {
+  fieldset {
+    border: none;
+    padding: 0;
+
+    mat-form-field {
+      width: 100%;
+
+      ::ng-deep .mat-form-field-infix {
+        padding: 0;
+        border-top: 0;
+      }
+
+      ::ng-deep .mat-form-field-label {
+        padding: 16px;
+        font-family: $robotoRegular;
+        font-size: 13px;
+        color: var(--colorGrayHover);
+      }
+
+      ::ng-deep .mat-form-field-underline {
+        display: none !important;
+      }
+
+      ::ng-deep .mat-form-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+
+    span {
+      display: block;
+      margin: 5px 0;
+      font-family: $robotoRegular;
+      font-size: 14px;
+      color: var(--colorGray);
+    }
+
+    input {
+      width: 100%;
+      background-color: var(--colorWhite);
+      border: 2px solid var(--colorGray);
+      padding: 16px;
+      color: var(--colorBlack);
+      box-sizing: border-box;
+      font-family: $robotoRegular;
+      line-height: normal;
+      outline: none;
+      @include border-radius(5px);
+
+      &:hover, &:focus {
+        border-color: var(--colorBlue);
+      }
+
+      &[type='file'] {
+        padding: 14.5px;
+      }
+
+      &[type='number'] {
+        height: 51px;
+      }
+    }
+  }
+}

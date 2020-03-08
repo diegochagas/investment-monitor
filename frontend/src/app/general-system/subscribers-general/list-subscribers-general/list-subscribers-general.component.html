@@ -1,0 +1,3 @@
+<div id="list-subscribers-general">
+  <app-table [customStyle]="{ 'max-height': 'calc(100vh - 120px)' }" [displayedColumns]="displayedColumns" [dataSource]="dataSource" (edit)="editSubscriber($event)" (delete)="deleteSubscriber($event)"></app-table>
+</div>

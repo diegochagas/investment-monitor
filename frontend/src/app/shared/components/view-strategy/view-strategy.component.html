@@ -1,0 +1,57 @@
+<div id="view-strategy">
+  <div class="content" #content>
+    <div class="ask">ASK: {{ config.ask }}%</div>
+
+    <div class="max-orders" *ngIf="amountOrders.length > 0">
+      <span class="left">{{ maxOrders }} Max Orders</span>
+      <span class="right">{{ maxOrders }} Max Orders</span>
+
+      <div class="order-exec ask_ord" *ngFor="let order of amountOrders.slice().reverse(); let i = index;" [class.first]="i == (amountOrders.length - 1)">
+        <span>{{ order.ask | currency: ' ' }} {{ iniPair }}</span>
+
+        <small>{{ order.am_ask }} {{ iniPair }} ({{ order.cc_ask | currency: '$ ' }})</small>
+
+        <div class="fraction-order">
+          <small *ngFor="let fraction of order.cf_ask.slice().reverse()[i];">{{ fraction.crypto }} {{ iniPair }} ({{ fraction.amount | currency: '$ ' }})</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="price">
+      <span>{{ config.midPrice | currency: ' ' }} {{ iniPair }}</span>
+    </div>
+
+    <div class="max-orders" *ngIf="amountOrders.length > 0">
+      <span class="left">{{ maxOrders }} Max Orders</span>
+      <span class="right">{{ maxOrders }} Max Orders</span>
+
+      <div class="order-exec bid_ord" *ngFor="let order of amountOrders; let i = index;"  [class.first]="i == 0">
+        <span>{{ order.bid | currency: ' ' }} {{ iniPair }}</span>
+
+        <div class="fraction-order">
+          <small *ngFor="let fraction of order.cf_bid[i];">{{ fraction.crypto }} {{ iniPair }} ({{ fraction.amount | currency: '$ ' }})</small>
+        </div>
+
+        <small>{{ order.am_bid }} {{ iniPair }} ({{ order.cc_bid | currency: '$ ' }})</small>
+      </div>
+    </div>
+
+    <div class="max-spread_left">
+      <span>Max Spread</span>
+
+      <div class="value">{{ maxSpread }}%</div>
+    </div>
+
+    <div class="max-spread_right">
+      <span>Max Spread</span>
+
+      <div class="value">{{ maxSpread }}%</div>
+    </div>
+
+    <div class="bid">BID: {{ config.bid }}%</div>
+
+    <div class="stop-loss">Stop Loss: {{ config.stopLoss }}%</div>
+
+    <div class="wallet">Wallet: {{ walletConverted }} {{ iniPair }}</div>
+  </div>
+</div>

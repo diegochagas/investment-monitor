@@ -1,0 +1,19 @@
+<div id="front-page">
+  <div class="top-logo"><img class="logo" src="/assets/logos/atlas-white.svg"></div>
+
+  <div class="pages">
+    <ul *ngIf="projects">
+      <ng-container *ngFor="let project of projects">
+        <li [class]="project.replace('/', '')">
+          <div>
+            <a [href]="project">
+              <span>
+                <img class="logo" [src]="'/assets/logos' + project + '-color.svg'">
+              </span>
+            </a>
+          </div>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

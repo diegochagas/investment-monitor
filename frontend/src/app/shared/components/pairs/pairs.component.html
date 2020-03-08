@@ -1,0 +1,120 @@
+<div id="pairs">
+  <form [formGroup]="formGroupPairs">
+    <div class="row" *ngIf="filteredOptions">
+      <div class="col">
+        <fieldset>
+          <span>Initial pair</span>
+
+          <mat-form-field [floatLabel]="'never'">
+            <input type="text" matInput formControlName="iniPair" [matAutocomplete]="ini" placeholder="Search initial pair">
+
+            <mat-autocomplete #ini="matAutocomplete" (optionSelected)="resetFilteredOptions();">
+              <mat-option *ngFor="let currencie of filteredOptions" [value]="currencie.symbol">
+                {{ currencie.symbol }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </fieldset>
+      </div>
+
+      <div class="col">
+        <fieldset>
+          <span>Final pair</span>
+
+          <mat-form-field [floatLabel]="'never'">
+            <input type="text" matInput formControlName="finPair" [matAutocomplete]="fin" placeholder="Search final pair">
+
+            <mat-autocomplete #fin="matAutocomplete" (optionSelected)="resetFilteredOptions();">
+              <mat-option *ngFor="let currencie of filteredOptions" [value]="currencie.symbol">
+                {{ currencie.symbol }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <fieldset>
+          <span>Exchange</span>
+
+          <mat-form-field [floatLabel]="'never'">
+            <mat-select [placeholder]="'Select the axchange'" formControlName="exchange">
+              <mat-option *ngFor="let exchange of exchanges" [value]="exchange.name">{{ exchange.name }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </fieldset>
+      </div>
+
+      <div class="col">
+        <fieldset>
+          <span>Weight</span>
+
+          <mat-form-field [floatLabel]="'never'">
+            <mat-select [placeholder]="'Select the weight'" formControlName="weight">
+              <mat-option *ngFor="let weight of weights" [value]="weight">{{ weight }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <fieldset>
+          <span>Quantity</span>
+
+          <input type="number" value="0" min="0" step="0.1" formControlName="quantity" placeholder="Write your quantity">
+        </fieldset>
+      </div>
+
+      <div class="col">
+        <fieldset>
+          <span>Type</span>
+
+          <mat-form-field [floatLabel]="'never'">
+            <mat-select [placeholder]="'Select the type'" formControlName="type">
+              <mat-option [value]="'fixed'">Fixed</mat-option>
+              <mat-option [value]="'percent'">Percent</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </fieldset>
+      </div>
+
+      <div class="col">
+        <fieldset>
+          <span>Coin</span>
+
+          <mat-form-field [floatLabel]="'never'">
+            <mat-select [placeholder]="'Select the coin'" formControlName="coin">
+              <mat-option [value]="'brl'">BRL</mat-option>
+              <mat-option [value]="'btc'">BTC</mat-option>
+              <mat-option [value]="'usd'">USD</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button mat-button type="button" [disabled]="formGroupPairs.invalid" (click)="addPair();">Add pair</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+    <div class="col">
+      <fieldset>
+        <span>Selected pairs</span>
+
+        <div class="pair" *ngFor="let pair of pairs; let i = index;">
+          {{ pair.iniPair }}{{ pair.finPair }} - <b>{{ pair.exchange }}</b> ({{ pair.coin | uppercase }} {{ pair.quantity }} {{ pair.weight }})
+
+          <s class="del icn-delete" (click)="delPair(i);"></s>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

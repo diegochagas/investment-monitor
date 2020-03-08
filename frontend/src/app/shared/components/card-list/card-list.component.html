@@ -1,0 +1,25 @@
+<div id="card-list">
+  <div class="row">
+    <div class="col-3" *ngFor="let card of dataCards; let i = index;">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="avatar {{ card.avatar }}"></div>
+
+          <mat-card-title *ngIf="card?.title">{{ card.title }}</mat-card-title>
+
+          <mat-card-subtitle *ngIf="card?.subtitle">{{ card.subtitle }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content *ngIf="card?.count > -1">
+          <div class="number">{{ card.count }}</div>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-button (click)="redirect(card.project, card.endpoint, 'list');">LIST ALL</button>
+
+          <button mat-button (click)="redirect(card.project, card.endpoint, 'add');">ADD NEW</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

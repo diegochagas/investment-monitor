@@ -1,0 +1,193 @@
+@import "../../themes/styles-default";
+
+@import "../../themes/white-label";
+
+#front-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: url('/assets/logos/atlas-color.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15vw;
+
+  .top-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .logo {
+    display: block;
+    height: 60px;
+  }
+
+  .pages {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    ul {
+      width: 100vw;
+      display: table;
+      table-layout: fixed;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: table-cell;
+        vertical-align: bottom;
+        position: relative;
+        width: 16.666%;
+        height: 100vh;
+        transition: all 500ms ease;
+
+        &.general-system {
+          background: rgba(0,0,0,1);
+          background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(199,58,98,1) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(199,58,98,1)));
+          background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(199,58,98,1) 100%);
+          background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(199,58,98,1) 100%);
+          background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(199,58,98,1) 100%);
+          background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(199,58,98,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#c73a62', GradientType=1 );
+
+          div {
+            background-image: url("/assets/logos/general-system-icon.svg");
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.bot-coins {
+          background: rgba(0,0,0,1);
+          background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(13,200,247,1) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(13,200,247,1)));
+          background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(13,200,247,1) 100%);
+          background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(13,200,247,1) 100%);
+          background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(13,200,247,1) 100%);
+          background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(13,200,247,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0dc8f7', GradientType=1 );
+
+          div {
+            background-image: url("/assets/logos/bot-coins-icon.svg");
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.bot-garch {
+          background: rgba(255,255,255,1);
+          background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(48,48,48,1) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(48,48,48,1)));
+          background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(48,48,48,1) 100%);
+          background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(48,48,48,1) 100%);
+          background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(48,48,48,1) 100%);
+          background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(48,48,48,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#303030', GradientType=1 );
+
+          div {
+            background-image: url("/assets/logos/bot-garch-icon.svg");
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.bot-market {
+          background: rgba(0,0,0,1);
+          background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(196,34,47,1) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(196,34,47,1)));
+          background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(196,34,47,1) 100%);
+          background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(196,34,47,1) 100%);
+          background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(196,34,47,1) 100%);
+          background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(196,34,47,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#c4222f', GradientType=1 );
+
+          div {
+            background-image: url("/assets/logos/bot-market-icon.svg");
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.bot-telegram {
+          background: rgba(0,0,0,1);
+          background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(89,41,141,1) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(89,41,141,1)));
+          background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(89,41,141,1) 100%);
+          background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(89,41,141,1) 100%);
+          background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(89,41,141,1) 100%);
+          background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(89,41,141,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#59298d', GradientType=1 );
+
+          div {
+            background-image: url("/assets/logos/bot-telegram-icon.svg");
+            background-repeat: no-repeat;
+          }
+        }
+
+        div {
+          display: block;
+          overflow: hidden;
+          width: 100%;
+
+          a {
+            position: relative;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            padding: 25px;
+            box-sizing: border-box;
+            text-decoration: none;
+            transition: all 200ms ease;
+
+            * {
+              -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+              -webkit-transition: all 400ms ease;
+              transition: all 400ms ease;
+            }
+
+            span {
+              position: absolute;
+              display: block;
+              bottom: 25px;
+              font-family: $montserratBold;
+              text-overflow: clip;
+              font-size: 40px;
+              text-transform: uppercase;
+              margin-bottom: 2px;
+              width: 100%;
+              opacity: 0;
+              white-space: nowrap;
+              overflow: hidden;
+              color: var(--colorWhite);
+            }
+          }
+        }
+      }
+
+      &:hover {
+        li {
+          width: 8%;
+
+          &:hover {
+            width: 60%;
+
+            a {
+              background: rgba(0, 0, 0, 0.4);
+
+              * {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

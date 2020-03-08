@@ -1,0 +1,49 @@
+<div id="dashboard-telegram">
+  <ng-container *ngIf="id === undefined">
+    <app-robots-list [robotsList]="robotsList" (selectedRobot)="selectedRobot($event);"></app-robots-list>
+  </ng-container>
+
+  <ng-container *ngIf="id">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <app-input-date [title]="'Date range'" [selectedDate]="selectedDate" (selected)="setSelectedDate($event);"></app-input-date>
+          </div>
+
+          <div class="col">
+            <app-select-options [dataOptions]="groupsList" [title]="'Group'" [selectedOption]="selectedGroup" [multiple]="'true'"></app-select-options>
+          </div>
+        </div>
+
+        <app-table [displayedColumns]="displayedColumnsInfo" [dataSource]="dataSourceInfo"></app-table>
+      </div>
+
+      <div class="col-9">
+        <div [chart]="performanceChart"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col" [chart]="resultsChart"></div>
+
+      <div class="col" [chart]="balanceChart"></div>
+
+      <div class="col" [chart]="earningsChart"></div>
+    </div> -->
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+
+    <app-table [displayedColumns]="displayedColumnsOperations" [dataSource]="dataSourceOperations" [tabs]="tabs" [tabsArr]="tabsArr" (tab)="setTab($event);" (delete)="deleteOperation($event);"></app-table>
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+  </ng-container>
+</div>

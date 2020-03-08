@@ -1,0 +1,3 @@
+<div id="list-exchange-general">
+  <app-table [customStyle]="{ 'max-height': 'calc(100vh - 120px)' }" [displayedColumns]="displayedColumns" [dataSource]="dataSource" (edit)="editTrigger($event);" (delete)="deleteTrigger($event);"></app-table>
+</div>

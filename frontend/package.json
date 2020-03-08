@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "config": "ts-node set-env.ts",
-    "start": "ng serve --open",
+    "start": "ng serve",
     "build": "ng build"
   },
   "private": true,

@@ -1,0 +1,66 @@
+@import "./styles-default";
+
+@import "./white-label";
+
+.swal2-modal {
+  width: auto !important;
+  padding: 20px !important;
+
+  #swal2-title,
+  #swal2-content {
+    font-family: $montserratRegular !important;
+    font-weight: normal !important;
+  }
+
+  #swal2-content {
+    font-size: 14px !important;
+  }
+
+  .swal2-actions {
+    button {
+      outline: none !important;
+      padding: 7px 10px !important;
+      font-weight: normal !important;
+      font-size: 12px !important;
+
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  &.error-form {
+    background-color: transparent;
+
+    h6 {
+      color: var(--colorWhite);
+      background-color: var(--colorBlueHover);
+      font-family: $montserratLight;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0;
+      padding: 10px 5px;
+      margin: 0;
+      text-transform: uppercase;
+      @include border-top-left-radius(5px);
+      @include border-top-right-radius(5px);
+    }
+
+    p {
+      font-family: $montserratLight;
+      font-size: 14px;
+      background-color: var(--colorRed);
+      color: var(--colorWhite);
+      margin: 0;
+      padding: 3px 10px;
+    }
+
+    p + h6 {
+      margin-top: 15px;
+    }
+
+    p + p {
+      padding-top: 0;
+    }
+  }
+}

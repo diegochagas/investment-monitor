@@ -1,0 +1,63 @@
+@import "../../../../themes/styles-default";
+
+@import "../../../../themes/white-label";
+
+#robots-list {
+  fieldset {
+    border: none;
+    padding: 0;
+
+    span {
+      display: block;
+      margin: 5px 0;
+      font-family: $robotoRegular;
+      font-size: 14px;
+      color: var(--colorGray);
+    }
+
+    input {
+      width: 100%;
+      background-color: var(--colorWhite);
+      border: 2px solid var(--colorGray);
+      padding: 16px;
+      color: var(--colorBlack);
+      box-sizing: border-box;
+      font-family: $robotoRegular;
+      line-height: normal;
+      outline: none;
+      @include border-radius(5px);
+
+      &:hover, &:focus {
+        border-color: var(--colorBlue);
+      }
+    }
+  }
+
+  .list {
+    display: block;
+    margin-bottom: 25px;
+
+    button {
+      width: 100%;
+      background-color: var(--colorWhite);
+      margin: 5px;
+      padding: 10px;
+      @include box-shadow(-2px, 0px, 5px, 0.5);
+    }
+
+    .icn-robots {
+      display: block;
+      font-size: 40px;
+      color: var(--colorDefault);
+    }
+
+    span {
+      display: inline-block;
+      font-size: 12px;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

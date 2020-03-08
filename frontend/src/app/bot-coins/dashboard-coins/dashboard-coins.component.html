@@ -1,0 +1,17 @@
+<div id="dashboard-coins">
+  <ng-container *ngIf="id === undefined">
+    <app-robots-list [robotsList]="robotsList" (selectedRobot)="selectedRobot($event);"></app-robots-list>
+  </ng-container>
+
+  <ng-container *ngIf="id">
+    <div class="row">
+      <div class="col-xs-12 col-md-3">
+        <app-view-profits [profits]="profits" [currencies]="currencies" (selectedData)="selectedData($event)"></app-view-profits>
+      </div>
+
+      <div class="col-xs-12 col-md-9">
+        <app-table [displayedColumns]="displayedColumns" [dataSource]="dataSource" [customStyle]="{ 'max-height': '80vh' }" [tabs]="tabs" [tabsArr]="tabsArr" (tab)="setTab($event);" ></app-table>
+      </div>
+    </div>
+  </ng-container>
+</div>

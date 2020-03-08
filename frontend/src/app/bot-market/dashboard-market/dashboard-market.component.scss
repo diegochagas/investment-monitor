@@ -1,0 +1,78 @@
+@import "../../../themes/styles-default";
+
+@import "../../../themes/white-label";
+
+#dashboard-market {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  .midPrice {
+    font-family: $montserratBold;
+    font-size: 25px;
+    color: var(--colorDefault);
+    padding: 15px 0;
+    text-align: center;
+    background-color: var(--colorWhite);
+    margin-bottom: 15px;
+  }
+
+  .liquidateForm {
+    display: block;
+    width: 100%;
+
+    fieldset {
+      border: none;
+      padding: 0;
+
+      span {
+        display: block;
+        margin: 5px 0;
+        font-family: $robotoRegular;
+        font-size: 14px;
+        color: var(--colorGray);
+      }
+
+      input {
+        width: 100%;
+        background-color: var(--colorWhite);
+        border: 2px solid var(--colorGray);
+        padding: 16px;
+        color: var(--colorBlack);
+        box-sizing: border-box;
+        font-family: $robotoRegular;
+        line-height: normal;
+        outline: none;
+        @include border-radius(5px);
+
+        &:hover, &:focus {
+          border-color: var(--colorBlue);
+        }
+
+        &[type='number'] {
+          height: 51px;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background-color: var(--colorBlue);
+      font-family: $robotoRegular;
+      font-size: 14px;
+      color: var(--colorWhite);
+      outline: none;
+      padding: 6px 5px;
+      border: none;
+      margin: 5px auto 0 auto;
+      cursor: pointer;
+      @include border-radius(2px);
+
+      &:disabled {
+        background-color: var(--colorGray);
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div id="header">
+  <ngx-loading-bar height="3px"></ngx-loading-bar>
+
+  <h1>{{ headerText }}</h1>
+
+  <h2 *ngIf="numberRecords > 1">{{ numberRecords }} Records</h2>
+
+  <h2 *ngIf="numberRecords == 1">{{ numberRecords }} Registry</h2>
+
+  <button type="button" mat-button [routerLink]="buttonObj.url" *ngIf="buttonObj.text">{{ buttonObj.text }}</button>
+</div>

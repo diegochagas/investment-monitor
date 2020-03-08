@@ -1,0 +1,159 @@
+@import '../../../../themes/styles-default';
+
+@import '../../../../themes/white-label';
+
+#view-profits {
+  position: relative;
+
+  fieldset {
+    border: none;
+    padding: 0;
+
+    span {
+      display: block;
+      margin: 5px 0;
+      font-family: $robotoRegular;
+      font-size: 14px;
+      color: var(--colorGray);
+    }
+
+    mat-form-field {
+      width: 100%;
+
+      ::ng-deep .mat-form-field-infix {
+        padding: 0;
+        border-top: 0;
+      }
+
+      ::ng-deep .mat-form-field-label {
+        padding: 16px;
+        font-family: $robotoRegular;
+        font-size: 13px;
+        color: var(--colorGrayHover);
+      }
+
+      ::ng-deep .mat-form-field-underline {
+        display: none !important;
+      }
+
+      ::ng-deep .mat-form-field-wrapper {
+        padding-bottom: 0;
+      }
+
+      input, select {
+        width: 100%;
+        background-color: var(--colorWhite);
+        border: 2px solid var(--colorGray);
+        padding: 16px;
+        color: var(--colorBlack);
+        box-sizing: border-box;
+        font-family: $robotoRegular;
+        line-height: normal;
+        outline: none;
+        @include border-radius(5px);
+
+        &:hover, &:focus {
+          border-color: var(--colorBlue);
+        }
+
+        &[type='file'] {
+          padding: 14.5px;
+        }
+
+        &[type='number'] {
+          height: 51px;
+        }
+      }
+
+      mat-select {
+        display: block;
+        width: 100%;
+        background-color: var(--colorWhite);
+        border: 2px solid var(--colorGray);
+        padding: 16px;
+        color: var(--colorBlack);
+        box-sizing: border-box;
+        font-family: $robotoRegular;
+        @include border-radius(5px);
+
+        &:hover, &:focus {
+          border-color: var(--colorBlue);
+        }
+      }
+    }
+  }
+
+  h4 {
+    border-bottom: 1px solid var(--colorDefault);
+    color: var(--colorGray);
+    font-family: $montserratBold;
+    font-size: 12px;
+    margin: 7px 0 0 0;
+    padding: 0 0 10px 20px;
+    text-transform: uppercase;
+  }
+
+  .content {
+    position: relative;
+    display: inline-block;
+    background-color: var(--colorWhite);
+    width: 100%;
+    padding: 15px 20px;
+    font-family: $montserratLight;
+
+    .material-icons {
+      font-size: 40px;
+      margin-right: 20px;
+    }
+
+    .color-gain {
+      color: var(--colorGreenHover);
+    }
+
+    .color-loss {
+      color: var(--colorRed);
+    }
+
+    .wallet {
+      color: var(--colorBlue);
+    }
+
+    .detail-profits,
+    .detail-total {
+      display: flex;
+      align-items: center;
+      color: var(--colorGray);
+    }
+
+    .invested-details {
+      margin: 7px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .invested-value,
+    .total-returns {
+      margin: 7px 0;
+      font-size: 16px !important;
+      font-weight: bold;
+    }
+
+    .invested-value {
+      color: var(--colorBlack);
+    }
+
+    hr {
+      height: 1px;
+      background-color: var(--colorGray);
+      border: none;
+    }
+
+    .start-balance span {
+      font-size: 10px !important;
+    }
+
+    .main-currency {
+      color: var(--colorBlue);
+    }
+  }
+}

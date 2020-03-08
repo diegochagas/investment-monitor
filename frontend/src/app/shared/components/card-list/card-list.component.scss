@@ -1,0 +1,24 @@
+@import "../../../../themes/styles-default";
+
+@import "../../../../themes/white-label";
+
+#card-list {
+  * {
+    color: var(--colorDefault);
+  }
+
+  button {
+    color: var(--colorDefault);
+  }
+
+  .avatar {
+    font-size: 42px;
+  }
+
+  .number {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-family: $robotoBold;
+  }
+}

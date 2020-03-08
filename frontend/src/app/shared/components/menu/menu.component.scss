@@ -1,0 +1,148 @@
+@import "../../../../themes/styles-default";
+
+@import "../../../../themes/white-label";
+
+#menu {
+  position: fixed;
+  width: 72px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--colorWhite);
+  z-index: 110;
+  @include transitionWidth(0.3s);
+  @include transitionDelay(0.3s);
+  @include box-shadow(-2px, 0px, 5px, 0.5);
+
+  * {
+    outline: none;
+  }
+
+  .logo {
+    position: relative;
+    display: block;
+    margin: 25px 15px;
+    padding-bottom: 10px;
+
+    .icon {
+      position: relative;
+      height: 40px;
+      cursor: pointer;
+      top: 5px;
+    }
+
+    .text {
+      position: absolute;
+      height: 40px;
+      left: 75px;
+      top: 50%;
+      cursor: pointer;
+      @include translate(0, -50%);
+      @include transitionLeft(0.3s);
+      @include transitionDelay(0.3s);
+    }
+
+    .projects {
+      position: absolute;
+      display: none;
+      width: 200px;
+      top: 52px;
+      left: -15px;
+      background-color: var(--colorWhite);
+      overflow: hidden;
+      padding-top: 10px;
+      z-index: 5;
+      @include box-shadow(0px, 2px, 2px, 0.3);
+      @include transitionDelay(0.3s);
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 5px;
+
+        img {
+          height: 24px;
+          margin: 5px 0 5px 18px;
+        }
+      }
+    }
+
+    &:hover {
+      .projects {
+        display: inherit;
+      }
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+    color: var(--colorGray);
+    text-decoration: none;
+    padding: 5px;
+    white-space: nowrap;
+    font-family: $montserratLight;
+    font-size: 12px;
+
+    &:before {
+      display: inline-block;
+      font-size: 24px;
+      vertical-align: middle;
+      margin: 5px 0 5px 18px;
+    }
+
+    &.active,
+    &:hover {
+      background-color: var(--colorWhiteHover);
+      color: var(--colorGrayHover);
+
+      &:before {
+        color: var(--colorDefault);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background-color: var(--colorDefault);
+      }
+    }
+
+    span {
+      position: absolute;
+      width: calc(100% - 45px);
+      left: 75px;
+      top: 50%;
+      @include translate(0, -40%);
+      @include transitionLeft(0.3s);
+      @include transitionDelay(0.3s);
+    }
+
+    &.logout {
+      position: absolute;
+      left: 0;
+      bottom: 25px;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    width: 200px;
+
+    .logo {
+      .text {
+        left: 45px;
+      }
+    }
+
+    a {
+      span {
+        left: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+<div id="data-trade">
+  <div class="row">
+    <div class="col">
+      <div class="box-grey">
+        <h2>
+          {{ data.symbol }}
+
+          <span [ngClass]="{ 'result': true, 'color-gain': data.realizedReturn > 0, 'color-loss': data.realizedReturn < 0 }">
+            <i class="material-icons">
+              {{ data.realizedReturn > 0 ? 'trending_up' : (data.realizedReturn < 0 ? 'trending_down': 'trending_flat') }}
+            </i>
+          </span>
+
+          <span [ngClass]="{ 'result': true, 'color-gain': data.expectedReturn > 0, 'color-loss': data.expectedReturn < 0 }">
+            {{ data.expectedReturn | number:'.8-8' }}%
+          </span>
+
+          <span class="result">/</span>
+
+          <span [ngClass]="{ 'result': true, 'color-gain': data.realizedReturn > 0, 'color-loss': data.realizedReturn < 0 }">
+            {{ data.realizedReturn | number:'.8-8' }}%
+          </span>
+        </h2>
+
+        <p>
+          <b>Quantity:</b>
+
+          {{ data.quantity | number:'.8-8' }}
+        </p>
+
+        <p>
+          <b>Value:</b>
+
+          {{ data.value | number:'.8-8' }}
+        </p>
+      </div>
+
+      <p>
+        <b>Market:</b>
+
+        <span class="market">{{ data.market }}</span>
+      </p>
+    </div>
+
+    <div class="col">
+      <p>
+        <b>Type:</b>
+
+        <span [ngClass]="{ 'tag': true, 'background-gain': data.type == 'BUY', 'background-loss' : data.type == 'SELL' }">{{ data.type }}</span>
+      </p>
+
+      <p>
+        <b>Order ID:</b>
+
+        {{ data.orderId }}
+      </p>
+
+      <p>
+        <b>Effective rate:</b>
+
+        <span>{{ data.effectiveRate | number:'.8-8' }}</span>
+      </p>
+
+      <p>
+        <b>Fee:</b>
+
+        {{ data.fee }}
+      </p>
+
+      <p>&nbsp;</p>
+
+      <p>
+        <b>Date:</b>
+
+        {{ data.orderDate | dateFormat }}
+      </p>
+    </div>
+  </div>
+
+  <mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="data">Close</button>
+  </mat-dialog-actions>
+</div>

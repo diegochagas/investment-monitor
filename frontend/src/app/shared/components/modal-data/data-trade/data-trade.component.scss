@@ -1,0 +1,80 @@
+@import "../../../../../themes/styles-default";
+
+@import "../../../../../themes/white-label";
+
+#data-trade {
+  .box-grey {
+    display: block;
+    width: 100%;
+    min-width: 300px;
+    padding: 25px;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    @include border-radius(5px);
+
+    h2 {
+      font-family: $montserratBold;
+      margin: 0 0 25px 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #777777;
+      display: flex;
+      align-items: center;
+    }
+
+    .result {
+      font-family: $montserratLight;
+      font-size: 16px;
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .material-icons {
+      margin-right: 6px;
+    }
+  }
+
+  p {
+    white-space: nowrap;
+    font-family: $montserratLight;
+    font-size: 16px;
+    color: #777777;
+
+    b {
+      display: inline-block;
+      font-family: $montserratRegular;
+      margin-right: 15px;
+    }
+
+    .tag {
+      background-color: #777777;
+      display: inline-block;
+      padding: 2px 5px;
+      color: var(--colorWhite);
+      font-family: $montserratBold;
+      font-size: 12px;
+      text-transform: uppercase;
+      @include border-radius(2px);
+    }
+
+    .market {
+      text-transform: uppercase;
+    }
+  }
+
+  .background-gain {
+    background-color: var(--colorGreenHover) !important;
+  }
+
+  .background-loss {
+    background-color: var(--colorRed) !important;
+  }
+  .color-gain {
+    color: var(--colorGreenHover);
+  }
+
+  .color-loss {
+    color: var(--colorRed);
+  }
+}
